@@ -12,13 +12,13 @@
 
 .theme-dark {
 	--background-primary: #212121;
-	--background-secondary: #26272F;
+	--background-secondary: #2d2d2d;
 	--background-secondary-alt: #222222;
 	--background-tertiary: #181818;
 	--background-accent: #1d1d1d;
 	--modal-background: #303030;
 	--background-mobile-primary: #2d2d2d;
-	--background-mobile-secondary: #26272F;
+	--background-mobile-secondary: #2d2d2d;
 	--channeltextarea-background: #272727;
 	--background-message-hover: transparent;
 	--background-modifier-hover: #111111;
