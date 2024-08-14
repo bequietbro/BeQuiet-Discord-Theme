@@ -1,0 +1,254 @@
+:root {
+	--disable-animations: 2s channel-unread infinite;
+	color: var(--channels-default);
+	--guildbar-width: 56px;
+	--sidebar-width: 200px;
+	--header-height: 40px;
+	--avatar-radius: 3px;
+	--status-radius: 3px;
+	--server-radius: 8px;
+}
+
+
+.theme-dark {
+	--background-primary: #2d2d2d;
+	--background-secondary: #26272F;
+	--background-secondary-alt: #222222;
+	--background-tertiary: #181818;
+	--background-accent: #1d1d1d;
+	--modal-background: #303030;
+	--background-mobile-primary: #2d2d2d;
+	--background-mobile-secondary: #26272F;
+	--channeltextarea-background: #272727;
+	--background-message-hover: transparent;
+	--background-modifier-hover: #111111;
+	--background-modifier-active: #171717;
+	--background-modifier-selected: #202020;
+	--deprecated-card-bg: #6e1625;
+	--background-floating: #2f151a;
+	--deprecated-quickswitcher-input-background: #2f1216;
+	--elevation-low: none;
+	--scrollbar-auto-thumb: #37161a;
+	--scrollbar-auto-track: #421f24;
+	--scrollbar-thin-thumb: #39191d;
+	--activity-card-background: #301315;
+	--input-background: #401b20;
+	--text-normal: #F7F7F7;
+    --text-muted: #878787;
+}
+
+.theme-light {
+	--background-primary: #23283d;
+	--background-secondary: #1e2233;
+	--background-secondary-alt: #191f2e;
+	--background-tertiary: #101320;
+	--background-accent: #7289da;
+	--background-modifier-hover: #262b41;
+	--background-modifier-active: #262b41;
+	--modal-background: var(--background-primary);
+	--header-primary: #fff;
+	--header-secondary: #b1b5b9;
+	--text-normal: #F7F7F7;
+    --text-muted: #878787;
+}
+
+
+
+
+/* Makes all member list/"channel information" areas work */
+.container-2Oqvgx {
+  width: auto;
+}
+
+.tabs-1RhQha {
+  padding: 10px 6px;
+  display: block;
+  height: fit-content;
+  max-height: none;
+}
+
+/* Fixes overflow for unread bars */
+.unreadBottom__6be9f > .bar_c10249 {
+  font-size: 10px;
+}
+
+.topPill-3DJJNV .item-3XjbnG {
+  margin: 0 4px 0 0;
+}
+
+/* Header container heights */
+.container_e44302,
+.header_fd6364,
+.searchBar_f0963d {
+  height: var(--header-height);
+}
+
+.libraryHeader_cb9493::before {
+  top: var(--header-height);
+}
+
+/* Settings */
+.sidebarRegion_c25c6d {
+  flex: 0;
+}
+
+.contentColumn_c25c6d {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+#my-account-tab {
+  padding: unset;
+}
+#my-account-tab > div {
+  max-width: 740px;
+  padding: 60px 40px 80px;
+}
+
+.customScroller_c25c6d > div,
+.sidebarScrollable_e9196a + .content_e9196a {
+  max-width: unset;
+}
+
+.bd-addon-list.bd-grid-view {
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+}
+.bd-addon-list .bd-addon-card {
+  margin-bottom: 10px;
+}
+
+/* Tooltips */
+.tooltip-14MtrL {
+  border-radius: 4px;
+}
+
+.tooltipContent-Nejnvh {
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+/* Messages */
+.cozy_ec86aa.wrapper_ec86aa {
+  padding-left: 64px;
+}
+.cozy_ec86aa.wrapper_ec86aa .avatar_ec86aa {
+  transform: scale(0.75);
+  width: 32px;
+  height: 32px;
+  position: absolute !important;
+}
+
+.buttons_d5deea {
+  transform: scale(0.75);
+  transform-origin: right;
+}
+
+/* Chat input */
+.form_a7d72e {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Guilds */
+.guilds_a4d4d9 {
+	width: var(--guildbar-width);
+	/* Makes open folders look normal */
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 .wrapper_fd07a3 {
+	height: calc(var(--guildbar-width) * 0.625) !important;
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 .wrapper_fd07a3 span {
+	max-height: calc(var(--guildbar-width) * 0.375) !important;
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 div[style*="height: 56px"],
+.guilds_a4d4d9 [role=group] {
+	height: auto !important;
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 [class*=unreadMentionsIndicator],
+.guilds_a4d4d9 .wrapper_bc7085 {
+	width: 100%;
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 .wrapper-28eC3z,
+.guilds_a4d4d9 [class*=guildsError-],
+.guilds_a4d4d9 svg[width="48"] {
+	width: calc(var(--guildbar-width) * 0.625) !important;
+	height: calc(var(--guildbar-width) * 0.625) !important;
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 #bd-pub-button {
+	height: calc(var(--guildbar-width) * 0.375) !important;
+	line-height: calc(var(--guildbar-width) * 0.375) !important;
+	font-size: 10px;
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 .wrapper_c5f96a {
+	width: calc(var(--guildbar-width) * 0.625) !important;
+	height: calc(var(--guildbar-width) * 0.625) !important;
+	/* Добавление стиля для квадратных иконок */
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 .listItem_c96c45 {
+	width: var(--guildbar-width) !important;
+	border-radius: 3 !important;
+}
+.guilds_a4d4d9 .expandedFolderBackground_bc7085 {
+	left: calc(var(--guildbar-width) * 0.2) !important;
+	width: calc(var(--guildbar-width) * 0.625) !important;
+	--custom-folder-item-guild-icon-margin: 0px;
+	border-radius: 3 !important;
+}
+
+/* Private channels horizontal icons */
+.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) {
+  width: calc(25% - 8px);
+  margin-left: 8px;
+  padding: 0;
+  display: inline-block;
+}
+.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .content_e9f61e,
+.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .children_e9f61e {
+  display: none;
+}
+.channel_c91bad:is([href="/channels/@me"], [href="/discovery"], [href="/library"], [href="/store"]) .avatar_e9f61e {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.layout_e9f61e {
+  justify-content: center;
+}
+
+/* Compatibility for MembersList */
+#MemberCount {
+  width: auto !important;
+  margin-top: 0 !important;
+}
+#MemberCount .membersGroup_cbd271 {
+  height: auto;
+}
+
+
+/* Radial Status */
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 10%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
