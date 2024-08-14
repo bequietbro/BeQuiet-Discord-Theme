@@ -1,2 +1,2 @@
-# BeQuietLow
+# Be Quiet
 Theme for Discord
