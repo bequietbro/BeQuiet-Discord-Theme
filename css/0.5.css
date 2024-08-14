@@ -30,29 +30,29 @@
 
 .theme-dark {
 	--background-primary: #212121;
-	--background-secondary: #2d2d2d;
-	--background-secondary-alt: #222222;
-	--background-tertiary: #181818;
+	--background-secondary: #212121;
+	--background-secondary-alt: #212121;
+	--background-tertiary: #212121;
 	--background-accent: #1d1d1d;
 	--modal-background: #303030;
-	--background-mobile-primary: #2d2d2d;
-	--background-mobile-secondary: #2d2d2d;
+	--background-mobile-primary: #212121;
+	--background-mobile-secondary: #212121;
 	--channeltextarea-background: #302F2F;
 	--background-message-hover: transparent;
 	--background-modifier-hover: #111111;
 	--background-modifier-active: #171717;
 	--background-modifier-selected: #202020;
 	--deprecated-card-bg: #6e1625;
-	--background-floating: #2f151a;
+	--background-floating: #111214;
 	--deprecated-quickswitcher-input-background: #2f1216;
 	--elevation-low: none;
-	--scrollbar-auto-thumb: #37161a;
-	--scrollbar-auto-track: #421f24;
+	--scrollbar-auto-thumb: #fc2b47;
+	--scrollbar-auto-track: #2b2d31;
 	--scrollbar-thin-thumb: #39191d;
 	--activity-card-background: #301315;
 	--input-background: #401b20;
 	--text-normal: #F7F7F7;
-    --text-muted: #878787;
+	--text-muted: #878787;
 }
 
 .theme-light {
