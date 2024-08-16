@@ -1,5 +1,5 @@
 <p style="text-align: center;">
-    <span style="text-transform: uppercase; font-size: 2em;">Be Quiet</span>
+    <span style="text-transform: uppercase; font-size: 20;">Be Quiet</span>
 </p>
 Theme for Discordю Download ONLY **bequiet.theme.css**.
 
