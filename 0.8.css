@@ -336,6 +336,9 @@ html.theme-light .force-theme.theme-light {
 	padding: 8px;
 	border-radius: 15px;
 }
+.messageContent_f9f2ca:empty {
+  display: none !important;
+}
 .buttons_d5deea {
 	transform: scale(0.75);
 	transform-origin: right;
