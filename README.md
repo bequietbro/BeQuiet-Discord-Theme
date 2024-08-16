@@ -1,5 +1,5 @@
 <p align="center">
-<h>Be Quiet</h>
+<h1>Be Quiet</h1>
 </p>
 Theme for Discordю Download ONLY **bequiet.theme.css**.
 
