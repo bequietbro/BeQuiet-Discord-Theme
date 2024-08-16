@@ -1,2 +1,6 @@
 # Be Quiet
-Theme for Discord
+Theme for Discordю Download ONLY **bequiet.theme.css**.
+
+To apply the go to "theme" setting and upload theme: ![image](https://github.com/user-attachments/assets/9452e169-4c58-443e-a70d-6e35dffeef1a)
+Or use this () link and paste it here: ![image](https://github.com/user-attachments/assets/7e4b85c9-337a-44dd-99de-c44b20665d10)
+
