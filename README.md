@@ -1,6 +1,4 @@
-<p style="text-align: center;">
-    <span style="text-transform: uppercase; font-size: 20;">Be Quiet</span>
-</p>
+# Be Quiet
 Theme for Discordю Download ONLY **bequiet.theme.css**.
 
 To apply it go to "theme" setting and upload the theme:
