@@ -358,22 +358,15 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {
 }
 
 /* Guilds */
+.guilds-container {
+	position: relative;
+}
 .guilds_a4d4d9 {
-    width: 0;
-    transition: width 0.3s ease;
-    overflow: hidden;
-    position: relative;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
 }
-:root .guilds-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: var(--guildbar-width);
-    overflow: hidden;
-}
-:root .guilds-container:hover .guilds_a4d4d9 {
-    width: var(--guildbar-width);
+.guilds-container:hover .guilds_a4d4d9 {
+transform: translateX(0);
 }
 .guilds_a4d4d9 .wrapper_fd07a3 {
 	height: calc(var(--guildbar-width) * 0.625) !important;
