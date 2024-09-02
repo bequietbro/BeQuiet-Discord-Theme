@@ -203,10 +203,6 @@ html.theme-light .force-theme.theme-light {
     color: var(--interactive-normal);
   }
 }
-.barBase__4e0ba {
-  width: fit-content;
-  margin-left: auto;
-}
 
 /*     Visible Server Banner     */
 [class^="container_"]:not([class*="bannerVisible_"]) >
