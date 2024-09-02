@@ -359,7 +359,12 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {
 
 /* Guilds */
 .guilds_a4d4d9 {
-	width: var(--guildbar-width);
+    width: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+.guilds_a4d4d9:hover {
+    width: var(--guildbar-width); /* Восстанавливаем изначальную ширину */
 }
 .guilds_a4d4d9 .wrapper_fd07a3 {
 	height: calc(var(--guildbar-width) * 0.625) !important;
