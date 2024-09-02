@@ -1,11 +1,43 @@
 /**
  * @name Be Quiet
  * @author BEQI
- * @version 0.5
+ * @version 2.0
  * @description Standart version. Firstly, it was created for the author himself.
  * @source https://github.com/bequietbro/BeQuiet-Discord-Theme
 */
-@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/1.0.css");
+@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/2.0.css");
+
 
 /* No scrollbars */
-::-webkit-scrollbar { display: none;}.content-1gYQeQ { margin: 0 !important; border-radius: 0; }.mainContent-20q_Hp { padding-left: 8px;}.container-1oeRFJ { margin: 0; max-width: unset; }.layout-1qmrhw { border-radius: 0; padding: 0 16px;}.unread-36eUEm { z-index: 1;} .buttons-uaqb-5 { padding-right: 10px !important;} .typeThread-2Aqh6X .content-1gYQeQ { padding-left: 34px;}
+@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/noscrollbars.css");
+
+/* Forum improvements */
+@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/forumattachments.css");
+
+/* Compressed bot messages */
+@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/compressedbotmessages.css")
+
+/* Better Spotify PLayer (requires 'SpotifyControls' plugin) */
+@import url(https://raw.githubusercontent.com/Panniku/vc-snippets/main/BetterSpotifyPlayer.css);
+
+:root {
+	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
+	--beq-home-icon: url(https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/beq-logo.png?raw=true); /* Default: https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/beq-logo.png?raw=true */
+	--server-radius: 8px; /* Default: 8px */
+	--guildbar-width: 56px; /* Default: 56px */
+	
+	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ TOOLTIPS ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
+	--disable-animations: 2s channel-unread infinite; /* Default: 2s */
+	
+	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ MESSAGES ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
+	--interactive-normal: #b78890; /* Default: #b78890 */
+    --interactive-hover: #e3263f; /* Default: #e3263f */
+    --interactive-active: #fc2b47; /* Default: #fc2b47 */
+    --interactive-muted: #484951; /* Default: #484951 */
+	--max-width: calc(40px * 6); /* 6 columns when expanded */
+    --min-width: calc(40px * 2); /* 2 columns when collapsed */
+
+	/*ΞΞΞΞΞΞΞΞΞ╣ CHANNEL LIST ╠ΞΞΞΞΞΞΞΞΞ*/
+    --channellist-width: 240px; /* Default: 240px */
+    --channellist-header-height: 48px; /* Default: 48px */
+}
