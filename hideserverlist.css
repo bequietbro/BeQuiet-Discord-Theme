@@ -1,8 +1,0 @@
-.guilds_a4d4d9 {
-    width: 0;
-    transition: width 0.3s ease;
-    overflow: hidden;
-}
-:root .guilds_a4d4d9:hover {
-    width: var(--guildbar-width);
-}
