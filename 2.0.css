@@ -117,8 +117,12 @@ html.theme-light .force-theme.theme-light {
     color: var(--interactive-normal);
   }
 }
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
+}
 
-/*     Visible Server Banner     */
+/* Visible Server Banner */
 [class^="container_"]:not([class*="bannerVisible_"]) >
 [class^="animatedContainer_"] {
   top: 3px;
@@ -435,13 +439,13 @@ span[class*="timestamp_"] time::before {
     font-size: 0.625rem;
     font-weight: 400;
 }
-/* message header timestamps */
+/* Message header timestamps */
 span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
   font-size: 0.75rem;
   font-weight: 500;
 }
-/* header-less multi-line hover timestamps */
+/* Header-less multi-line hover timestamps */
 span[class*="timestampVisibleOnHover_"] time::before {
   content: attr(aria-label);
   position: absolute;
@@ -451,7 +455,7 @@ span[class*="timestampVisibleOnHover_"] time::before {
   left: -1px;
   top: -2px;
 }
-/* hide the old timestamps */
+/* Hide the old timestamps */
 span[class*="timestampInline_"], span[class*="timestampVisibleOnHover_"] {
   font-size: 0rem !important;
 }
