@@ -20,6 +20,9 @@
 /* Better Spotify PLayer (requires 'SpotifyControls' plugin) */
 @import url(https://raw.githubusercontent.com/Panniku/vc-snippets/main/BetterSpotifyPlayer.css);
 
+/* Settings Icons (requires 'ThemeAttributes' plugin) */
+@import url("https://gold-me.github.io/DiscordIcons/main.css");
+
 :root {
 	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
 	--beq-home-icon: url(https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/beq-logo.png?raw=true); /* Default: https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/beq-logo.png?raw=true */
@@ -40,4 +43,17 @@
 	/*ΞΞΞΞΞΞΞΞΞ╣ CHANNEL LIST ╠ΞΞΞΞΞΞΞΞΞ*/
     --channellist-width: 240px; /* Default: 240px */
     --channellist-header-height: 48px; /* Default: 48px */
+		
+	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ SETTINGS ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
+    --icon-size: 24px; /* Default: 24px */
+    --icon-height 32px; /* Default: 32px */
+    --icon-animations: true; /* Default: true */        /* ICONS */
+    --icon-expand: false; /* Default: false */
+    --icon-monocolor: false; /* Default: false */
+    --icon-permacolor: false; /* Default: false */
+/*
+	Example for changing icon's color:
+.item_a0[data-tab-id="Discord Nitro"]::before {
+	--icon-color: var(--brand-500);
+}*/
 }
