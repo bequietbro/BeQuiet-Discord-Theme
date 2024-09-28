@@ -1,4 +1,4 @@
-#Be Quiet
+# Be Quiet
 Theme for Discord. Download ONLY **bequiet.theme.css**.
 
 To apply it go to "theme" setting and upload the theme:
