@@ -5,7 +5,7 @@
  * @description Standart version. Firstly, it was created for the author himself.
  * @source https://github.com/bequietbro/BeQuiet-Discord-Theme
 */
-@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/2.2.css");
+@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/2.3.css");
 
 
 /* No scrollbars */
@@ -22,6 +22,9 @@
 
 /* Settings Icons (requires 'ThemeAttributes' plugin) */
 @import url("https://gold-me.github.io/DiscordIcons/main.css");
+
+/* Gradient DM (works only in English) */
+@import url("https://raw.githubusercontent.com/Teeenoob/vc-css/refs/heads/main/dm-gradient.css");
 
 :root {
 	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
