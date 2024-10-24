@@ -248,7 +248,10 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 :root .wrapper_c5f96a:hover foreignObject {border-radius: calc(var(--server-radius) - 3px);}
 [class*=unreadMentionsFixedFooter_]{bottom: 0px !important;}
 [class^=footer_]:has([class*=fixedDiscoveryIcon_]) {display: none;}
-[class^=footer_]:has([class*=downloadAppsButton_]) {display: none;}
+[class^=footer_]:has(button[class*=downloadAppsButton_]) {
+    bottom: 0px !important;
+    display: block !important;
+}
 
 /* Messages */
 .contents_f9f2ca .messageContent_f9f2ca, .container_b558d0 {
