@@ -17,13 +17,15 @@
 @import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/compressedbotmessages.css")
 
 /* Better Spotify PLayer (requires 'SpotifyControls' plugin) */
-@import url(https://raw.githubusercontent.com/Panniku/vc-snippets/main/BetterSpotifyPlayer.css);
+@import url("https://raw.githubusercontent.com/Panniku/vc-snippets/main/BetterSpotifyPlayer.css");
 
 /* Settings Icons (requires 'ThemeAttributes' plugin) */
 @import url("https://gold-me.github.io/DiscordIcons/main.css");
 
-/* Gradient DM (works only in English) */
-@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/refs/heads/dev/gradientdm.css");
+/* Gradient Direct Messages & Member List */
+@import url('https://ukriu.github.io/cssCord/Other/gradientDM.css');
+@import url('https://ukriu.github.io/cssCord/Other/gradientML.css');
+
 
 :root {
 	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
@@ -41,11 +43,18 @@
     --interactive-muted: #484951; /* Default: #484951 */
 	--max-width: calc(40px * 6); /* 6 columns when expanded */
     --min-width: calc(40px * 2); /* 2 columns when collapsed */
+	
+	--gDM-online: linear-gradient(to right, rgb(68, 105, 68), transparent); /* Default: to right, rgb(68, 105, 68), transparent */
+    --gDM-offline: linear-gradient(to right, rgb(66, 66, 66), transparent); /* Default: to right, rgb(66, 66, 66), transparent */
+    --gDM-dnd: linear-gradient(to right, rgb(130,70,70), transparent); /* Default: to right, rgb(130,70,70), transparent*/
+    --gDM-idle: linear-gradient(to right, rgb(135, 105, 75), transparent); /* Default: to right, rgb(135, 105, 75), transparent */
+    --gDM-streaming: linear-gradient(to right, rgb(63, 33, 88), transparent); /* Default: to right, rgb(63, 33, 88), transparent */
+    --gDM-border-radius: 8px;
 
 	/*ΞΞΞΞΞΞΞΞΞ╣ CHANNEL LIST ╠ΞΞΞΞΞΞΞΞΞ*/
     --channellist-width: 240px; /* Default: 240px */
     --channellist-header-height: 48px; /* Default: 48px */
-		
+	
 	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ SETTINGS ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
     --icon-size: 24px; /* Default: 24px */
     --icon-height 32px; /* Default: 32px */
@@ -53,9 +62,4 @@
     --icon-expand: false; /* Default: false */
     --icon-monocolor: false; /* Default: false */
     --icon-permacolor: false; /* Default: false */
-/*
-	Example for changing icon's color:
-.item_a0[data-tab-id="Discord Nitro"]::before {
-	--icon-color: var(--brand-500);
-}*/
 }
