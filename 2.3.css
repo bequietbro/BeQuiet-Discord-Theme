@@ -95,7 +95,7 @@ html.theme-light .force-theme.theme-light {
 
 
 
-/* Header container */
+/* Context menus */
 .libraryHeader_cb9493::before {top: var(--header-height);}
 .wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb {
   background: var(--beq-home-icon) center/cover no-repeat;
@@ -108,8 +108,6 @@ html.theme-light .force-theme.theme-light {
 
   & svg[class*=icon_] {transform: scale(1.4); color: var(--interactive-normal);}
 }
-
-/*     Visible Server Banner     */
 [class^="container_"]:not([class*="bannerVisible_"]) >
 [class^="animatedContainer_"] {top: 3px;}
 [class*="animatedContainer_"] {opacity: 1 !important;}
@@ -117,8 +115,6 @@ html.theme-light .force-theme.theme-light {
 [class^="sidebar_"] header {background-color: transparent !important;}
 [class^='membersGroup']:has([role=button]),
 [class^='member'] [class^='container']:has([class*='badges']) {display: none;}
-
-/* Context menus */
 .item-1OdjEX {min-height: 18px;}
 .styleFixed-2_NfVL {width: calc(var(--sidebar-width) - 20px);}
 .description_e0f739 {display: none;}
@@ -204,8 +200,6 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
   will-change: transform;
 }
 .profileBadges__7a7cb.profileBadges__7a7cb {flex: none;}
-[class*=unreadMentionsFixedFooter_]{bottom: 0px !important;}
-[class^=footer_]:has([class*=fixedDiscoveryIcon_]) {display: none;}
 
 /* Avatar */
 :root .avatar_f9f2ca.clickable_f9f2ca {filter: drop-shadow(0 0 5px); color: var(--interactive-active);}
@@ -252,6 +246,9 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 :root .iconInactive_f11207 {border-radius: calc(var(--server-radius) - 4px);}
 :root .wrapper_c5f96a foreignObject {transition: border-radius 200ms;}
 :root .wrapper_c5f96a:hover foreignObject {border-radius: calc(var(--server-radius) - 3px);}
+[class*=unreadMentionsFixedFooter_]{bottom: 0px !important;}
+[class^=footer_]:has([class*=fixedDiscoveryIcon_]) {display: none;}
+[class^=footer_]:has([class*=downloadAppsButton_]) {display: none;}
 
 /* Messages */
 .contents_f9f2ca .messageContent_f9f2ca, .container_b558d0 {
