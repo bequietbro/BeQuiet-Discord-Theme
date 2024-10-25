@@ -30,7 +30,7 @@
 
 :root {
 	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
-	--beq-home-icon: url(https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/beq-logo.png?raw=true); /* Default: https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/beq-logo.png?raw=true */
+	--beq-home-icon: url(https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/quiet-logo.png?raw=true); /* Default: https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/quiet-logo.png.png?raw=true */
 	--server-radius: 8px; /* Default: 8px */
 	--guildbar-width: 56px; /* Default: 56px */
 	
