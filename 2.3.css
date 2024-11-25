@@ -96,12 +96,9 @@ html.theme-light .force-theme.theme-light {
 
 
 /* Context menus */
+section[class^="panels_"]>div[class^="mask_"] {display: none;}
 .libraryHeader_cb9493::before {top: var(--header-height);}
-.wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb {
-  background: var(--beq-home-icon) center/cover no-repeat;
-  min-width: 50px;
-  min-height: 50px;
-}
+.wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb {background: var(--beq-home-icon) center/cover no-repeat; min-width: 50px; min-height: 50px;}
 .wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb svg {display: none;}
 [class*=toolbar_]>*>[class*=search_]:not([class*=open_]) {
   &>[class*=searchBar_] {width: 22px; background: transparent;}
@@ -214,28 +211,11 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 .guilds_a4d4d9 .wrapper_bc7085 {width: 100%;}
 .guilds_a4d4d9 .wrapper-28eC3z,
 .guilds_a4d4d9 [class*=guildsError-],
-.guilds_a4d4d9 svg[width="48"] {
-	width: calc(var(--guildbar-width) * 0.625) !important;
-	height: calc(var(--guildbar-width) * 0.625) !important;
-	border-radius: 3px;
-}
-.guilds_a4d4d9 #bd-pub-button {
-	height: calc(var(--guildbar-width) * 0.375) !important;
-	line-height: calc(var(--guildbar-width) * 0.375) !important;
-	font-size: 10px;
-}
-.guilds_a4d4d9 .wrapper_c5f96a {
-	width: calc(var(--guildbar-width) * 0.625) !important;
-	height: calc(var(--guildbar-width) * 0.625) !important;
-	border-radius: 3px;
-}
+.guilds_a4d4d9 svg[width="48"] {width: calc(var(--guildbar-width) * 0.625) !important; height: calc(var(--guildbar-width) * 0.625) !important; border-radius: 3px;}
+.guilds_a4d4d9 #bd-pub-button {height: calc(var(--guildbar-width) * 0.375) !important; line-height: calc(var(--guildbar-width) * 0.375) !important; font-size: 10px;}
+.guilds_a4d4d9 .wrapper_c5f96a {width: calc(var(--guildbar-width) * 0.625) !important; height: calc(var(--guildbar-width) * 0.625) !important; border-radius: 3px;}
 .guilds_a4d4d9 .listItem_c96c45 {width: var(--guildbar-width) !important;}
-.guilds_a4d4d9 .expandedFolderBackground_bc7085 {
-	left: calc(var(--guildbar-width) * 0.2) !important;
-	width: calc(var(--guildbar-width) * 0.625) !important;
-	--custom-folder-item-guild-icon-margin: 0px;
-	border-radius: 3px !important;
-}
+.guilds_a4d4d9 .expandedFolderBackground_bc7085 {left: calc(var(--guildbar-width) * 0.2) !important; width: calc(var(--guildbar-width) * 0.625) !important; --custom-folder-item-guild-icon-margin: 0px; border-radius: 3px !important;}
 :root .wrapper_c5f96a foreignObject {mask: none; -webkit-mask: none;}
 :root .wrapperSimple_c5f96a {overflow: visible;}
 :root .wrapperSimple_c5f96a,
@@ -266,12 +246,7 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 .mentioned_d5deea:before {background-color: var(--interactive-active);}
 .mentioned_d5deea:hover {background-color: rgba(var(--interactive-active), 0.2) !important;}
 [class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {margin-bottom: 24px;}
-[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  border-radius: 0px 0px 8px 8px;
-}
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {position: absolute; bottom: 0px; left: 0px; border-radius: 0px 0px 8px 8px;}
 [class^=botTagCompact], [class^=repliedTextPreview], [class^=repliedTextContentTrailingIcon] {order: 1 !important; /* default order is 0; 1 put it after */}
 
 [class*=channelTextAreaDisabled] {display: none !important;}
@@ -297,11 +272,7 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 }
 .buttons_ce5b56 .buttonContainer__8b164,
 .buttons_ce5b56 > .button_afdfd9 {width: 40px;}
-.separator__8424b {
-    margin: 0;
-    justify-content: center;
-    width: 40px;
-}
+.separator__8424b {margin: 0; justify-content: center; width: 40px;}
 .separator__8424b::before {display: none;}
 .separator__8424b .innerButton_debeee {margin: 0;}
 .textArea__74543 {width: fit-content; flex-grow: 1.01;}
@@ -330,11 +301,7 @@ span[class*="timestampVisibleOnHover_"] time::before {
 }
 /* hide the old timestamps */
 span[class*="timestampInline_"], span[class*="timestampVisibleOnHover_"] {font-size: 0rem !important;}
-span[class*="edited_"] {
-    position: relative;
-    right: 95px;
-    color: transparent;
-}
+span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 
 
 /* Code box */
