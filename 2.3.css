@@ -160,43 +160,6 @@ div.side_a0 > div.item_a0[data-tab-id="Discord Nitro"] {display: none !important
 div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !important;}
 .textBadge__45d79{display: none;}
 
-/* Tooltips */
-.tooltip-14MtrL {border-radius: 4px;}
-.tooltipContent-Nejnvh {padding: 4px 8px; font-size: 13px;}
-:root .lowerBadge_c5f96a .numberBadge__40d6f::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: inherit;
-  border-radius: 100%;
-  z-index: -1;
-  animation: var(--disable-animations), 2s pulse infinite;
-  will-change: transform;
-}
-:root .mentionsBadge_e2a798 .numberBadge__40d6f::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background-color: inherit;
-  border-radius: 100%;
-  z-index: -1;
-  animation: var(--disable-animations), 2s pulse infinite;
-  will-change: transform;
-}
-:root .unread_d8bfb3::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: inherit;
-  border-radius: 100%;
-  z-index: 1;
-  animation: var(--disable-animations), pulse 2s infinite;
-  will-change: transform;
-}
-.profileBadges__7a7cb.profileBadges__7a7cb {flex: none;}
 
 /* Avatar */
 :root .avatar_f9f2ca.clickable_f9f2ca {filter: drop-shadow(0 0 5px); color: var(--interactive-active);}
@@ -283,13 +246,11 @@ span[class*="timestamp_"] time::before {
     font-size: 0.625rem;
     font-weight: 400;
 }
-/* message header timestamps */
 span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
   font-size: 0.75rem;
   font-weight: 500;
 }
-/* header-less multi-line hover timestamps */
 span[class*="timestampVisibleOnHover_"] time::before {
   content: attr(aria-label);
   position: absolute;
@@ -299,7 +260,6 @@ span[class*="timestampVisibleOnHover_"] time::before {
   left: -1px;
   top: -2px;
 }
-/* hide the old timestamps */
 span[class*="timestampInline_"], span[class*="timestampVisibleOnHover_"] {font-size: 0rem !important;}
 span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 
