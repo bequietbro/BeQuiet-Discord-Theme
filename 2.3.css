@@ -106,9 +106,6 @@ html.theme-light .force-theme.theme-light {
 	--accent-color-saturation: 60%;
 	--accent-color-lightness: 31%;}
 
-.theme-dark, .theme-light {
-	--accent-color-saturation-factor: calc(var(--accent-color-saturation) * var(--saturation-factor, 1));
-	--accent-ui: hsl(var(--accent-color-hue),var(--accent-color-saturation-factor),calc(var(--accent-color-lightness) * 1));
 
 :root.reduce-motion {
 	--anim-short: 0s;
