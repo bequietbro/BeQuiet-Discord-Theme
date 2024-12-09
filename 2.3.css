@@ -107,9 +107,40 @@ html.theme-light .force-theme.theme-light {
 	--accent-color-lightness: 31%;}
 
 .theme-dark, .theme-light {
-	--accent-color-saturation-factor: calc(var(--dplus-accent-color-saturation) * var(--saturation-factor, 1));
-	--accent-ui: hsl(var(--accent-color-hue),var(--accent-color-saturation-factor),calc(var(--accent-color-lightness) * 1));}
-
+	--accent-color-saturation-factor: calc(var(--accent-color-saturation) * var(--saturation-factor, 1));
+	--accent-ui: hsl(var(--accent-color-hue),var(--accent-color-saturation-factor),calc(var(--accent-color-lightness) * 1));
+	--brand-experiment: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.856),calc(var(--accent-color-lightness)*0.647));
+	--brand-100: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.778),98.2%);
+	--brand-130: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.875),96.9%);
+	--brand-160: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.846),94.9%);
+	--brand-200: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.833),92.9%);
+	--brand-230: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.870),91%);
+	--brand-260: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.862),88.6%);
+	--brand-300: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.861),85.9%);
+	--brand-360: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.861),77.5%);
+	--brand-400: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.861),71.8%);
+	--brand-430: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.857),69.8%);
+	--brand-460: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.855),67.5%);
+	--brand-500: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.856),64.7%);
+	--brand-500-hsl: var(--accent-color-hue) calc(var(--accent-color-saturation-factor)*0.856) 64.7%;
+	--brand-530: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.667),58.8%);
+	--brand-560: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.514),52.4%);
+	--brand-600: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.467),44.1%);
+	--brand-630: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.467),38.2%);
+	--brand-660: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.471),33.3%);
+	--brand-700: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.470),25.9%);
+	--brand-730: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.468),24.3%);
+	--brand-760: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.469),22.2%);
+	--brand-800: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.475),19.4%);
+	--brand-830: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.474),14.9%);
+	--brand-860: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.469),9.6%);
+	--brand-900: hsl(var(--accent-color-hue),calc(var(--accent-color-saturation-factor)*0.500),3.1%);}
+:root.reduce-motion {
+	--anim-short: 0s;
+	--anim-long: 0s;
+	--anim-sticky: 0s;
+	--anim-button: 0s;
+	--anim-button-appear: 0s;}
 
 /* Context menus */
 section[class^="panels_"]>div[class^="mask_"] {display: none;}
