@@ -48,7 +48,6 @@
 .theme-dark,
 html.theme-dark #app-mount .theme-light .root-g14mjS,
 html.theme-dark .force-theme.theme-light {
-	--backdrop: url(https://i.imgur.com/3AiL3yN.png);
 	--base-border: #141414;
 	--background-primary: #212121;
 	--background-secondary: #0d0d0dcb;
@@ -87,7 +86,6 @@ html.theme-dark .force-theme.theme-light {
 .theme-light,
 html.theme-light #app-mount .theme-light .root-g14mjS,
 html.theme-light .force-theme.theme-light {
-	--backdrop: url(https://i.imgur.com/3AiL3yN.png);
 	--background-primary: #c0b8b8;
 	--background-secondary: #ebe1e1;
 	--background-secondary-alt: #c0b8b8;
