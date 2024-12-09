@@ -17,6 +17,14 @@
              \|___|/                                        \|__|          
 */
 :root {
+	--blur-ui: 2px;
+  --blur-scale: 100;
+	--blur-popout: 3px;
+  --channels-width: 240px;
+	--members-width: 240px;
+	--scrollbar-width: 10px;
+	--blurcalc-popout: blur(calc(var(--blur-popout) / 100 * var(--blur-scale)));
+	--blurcalc-ui: blur(calc(var(--blur-ui) / 100 * var(--blur-scale)));
 	--header-height: 40px;
 	--border-radius: 3px;
 	--noasw-padding: calc(var(--toolbar-height) + (var(--server-icon-size) - var(--server-icon-size)));
@@ -40,9 +48,10 @@
 .theme-dark,
 html.theme-dark #app-mount .theme-light .root-g14mjS,
 html.theme-dark .force-theme.theme-light {
+	--backdrop: url(https://i.imgur.com/3AiL3yN.png);
 	--base-border: #141414;
 	--background-primary: #212121;
-	--background-secondary: #302F2F;
+	--background-secondary: #0d0d0dcb;
 	--background-secondary-alt: #212121;
 	--background-tertiary: #212121;
 	--background-accent: #1d1d1d;
@@ -50,7 +59,7 @@ html.theme-dark .force-theme.theme-light {
 	--background-dark: #241c1d;
 	--modal-background: var(--background-primary); /* #303030 */
 	--background-mobile-primary: #212121;
-	--background-mobile-secondary: #302F2F;
+	--background-mobile-secondary: #0d0d0dcb;
 	--channeltextarea-background: #302F2F;
 	--background-message-hover: transparent;
 	--background-modifier-hover: #111111;
@@ -71,18 +80,21 @@ html.theme-dark .force-theme.theme-light {
 	--syntax-grey-alt: #d1d5da;
 	--activity-card-background: #301315;
 	--input-background: #401b20;
-}
+	--accent-color-hue: 320;
+	--accent-color-saturation: 60%;
+	--accent-color-lightness: 31%;}
 
 .theme-light,
 html.theme-light #app-mount .theme-light .root-g14mjS,
 html.theme-light .force-theme.theme-light {
+	--backdrop: url(https://i.imgur.com/3AiL3yN.png);
 	--background-primary: #c0b8b8;
 	--background-secondary: #ebe1e1;
 	--background-secondary-alt: #c0b8b8;
 	--background-tertiary: #c0b8b8;
 	--background-accent: #1d1d1d;
 	--background-light: #eeb6bd;
-	--background-dark: #c8979d;  #fc2b47
+	--background-dark: #c8979d;
 	--modal-background: var(--background-primary);
 	--background-mobile-primary: #c0b8b8;
 	--background-mobile-secondary: #ebe1e1;
@@ -90,9 +102,13 @@ html.theme-light .force-theme.theme-light {
 	--background-message-hover: transparent;
 	--background-modifier-hover: #111111;
 	--background-modifier-active: #171717;
-}
+	--accent-color-hue: 320;
+	--accent-color-saturation: 60%;
+	--accent-color-lightness: 31%;}
 
-
+.theme-dark, .theme-light {
+	--accent-color-saturation-factor: calc(var(--dplus-accent-color-saturation) * var(--saturation-factor, 1));
+	--accent-ui: hsl(var(--accent-color-hue),var(--accent-color-saturation-factor),calc(var(--accent-color-lightness) * 1));}
 
 
 /* Context menus */
@@ -265,3 +281,34 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 
 
 
+		/*--- 3 Background ---*/
+/* Quick and dirty fix for create a new server in dark mode */
+.theme-dark .layer-1Ixpg3 .theme-light { /* the ones i actually need */
+	--header-primary: #060607;
+	--header-secondary: #4f5660;
+	--text-normal: #2e3338;
+	--interactive-normal: #4f5660;
+}
+	/*-- 3.1 Image --*/
+#app-mount {
+	background: var(--backdrop) !important;
+	background-size: cover !important;
+	background-position: center !important;
+}
+body { background-color: var(--accent-ui); }
+.appMount_ea7e65, .app_a01fb1, .bg_d4b6c5, .bg_d4b6c5, .app_a01fb1 {background-color: transparent;}
+		/*- 3.1.1 Transparent Mode / Light Mode Specifics -*/
+.bd-transparency, .bd-transparency #app-mount {background: transparent !important;}
+.theme-light .emoji, .theme-light .emoji.jumboable {
+	filter: drop-shadow(0 0 1px #00000055);
+}
+.bd-pfbtn,
+.bda-settings-button,
+.wrapper-22ayhK,
+.rtc-connection-status {
+	padding-bottom: 2px;
+}
+			/*-- 3.2 Margins --*/
+.layers_d4b6c5  {
+	margin: var(--spacing-app) !important; 
+}
