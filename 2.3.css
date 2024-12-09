@@ -283,33 +283,13 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 
 
 		/*--- 3 Background ---*/
-/* Quick and dirty fix for create a new server in dark mode */
-.theme-dark .layer-1Ixpg3 .theme-light { /* the ones i actually need */
+.theme-dark .layer-1Ixpg3 .theme-light {
 	--header-primary: #060607;
 	--header-secondary: #4f5660;
 	--text-normal: #2e3338;
 	--interactive-normal: #4f5660;
 }
-	/*-- 3.1 Image --*/
-#app-mount {
-	background: var(--backdrop) !important;
-	background-size: cover !important;
-	background-position: center !important;
-}
-body { background-color: var(--accent-ui); }
-.appMount_ea7e65, .app_a01fb1, .bg_d4b6c5, .bg_d4b6c5, .app_a01fb1 {background-color: transparent;}
-		/*- 3.1.1 Transparent Mode / Light Mode Specifics -*/
-.bd-transparency, .bd-transparency #app-mount {background: transparent !important;}
-.theme-light .emoji, .theme-light .emoji.jumboable {
-	filter: drop-shadow(0 0 1px #00000055);
-}
-.bd-pfbtn,
-.bda-settings-button,
-.wrapper-22ayhK,
-.rtc-connection-status {
-	padding-bottom: 2px;
-}
-			/*-- 3.2 Margins --*/
+			/*-- 3.1 Margins --*/
 .layers_d4b6c5  {
 	margin: var(--spacing-app) !important; 
 }
