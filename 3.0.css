@@ -65,16 +65,7 @@ html.theme-dark .force-theme.theme-light {
 	--syntax-grey: #959da5;
 	--syntax-grey-alt: #d1d5da;
 	--activity-card-background: #301315;
-	--input-background: #401b20;
-	--background-color-lightness-025: 2.5%;
-	--background-color-lightness-050: 5.0%;
-	--background-color-lightness-075: 7.5%;
-	--background-color-lightness-100: 10.0%;
-	--background-color-lightness-125: 12.5%;
-	--background-color-lightness-150: 15.0%;
-	--background-color-lightness-200: 20.0%;
-	--background-color-lightness-250: 25.0%;
-	--background-color-lightness-500: 50.0%;}
+	--input-background: #401b20;}
 
 .theme-light,
 html.theme-light #app-mount .theme-light .root-g14mjS,
@@ -92,16 +83,7 @@ html.theme-light .force-theme.theme-light {
 	--channeltextarea-background: #ebe1e1;
 	--background-message-hover: transparent;
 	--background-modifier-hover: #111111;
-	--background-modifier-active: #171717;
-	--background-color-lightness-025: 97.5%;
-	--background-color-lightness-050: 95.0%;
-	--background-color-lightness-075: 92.5%;
-	--background-color-lightness-100: 90.0%;
-	--background-color-lightness-125: 87.5%;
-	--background-color-lightness-150: 85.0%;
-	--background-color-lightness-200: 80.0%;
-	--background-color-lightness-250: 75.0%;
-	--background-color-lightness-500: 50.0%;}
+	--background-modifier-active: #171717;}
 
 
 /* Context menus */
@@ -127,6 +109,8 @@ section[class^="panels_"]>div[class^="mask_"] {display: none;}
     [class*="sidebar_"]{width: 200px;.vc-typing-indicator, .vc-channelemojis-emoji, [class*="guildIconV2Container_"]{display: none;}[class*="containerDefault_"]{[role="img"]{display: none;}}}
     [class*="chat_"]{[class*="membersWrap_"]{display: none;}}}
 img[class="emoji otherEmoji_e58351"]:hover {transform: scale(2);}
+[class*=channelTextAreaDisabled] {display: none!important;}
+[class*=channelTextAreaDisabled] {opacity: 0!important;position: absolute!important;height: 0px!important;width: 0px!important;z-index: 0!important;}
 
 /* Settings */
 .sidebarRegion_c25c6d {flex: 0;}
@@ -184,7 +168,7 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 .mentioned_d5deea:hover {background-color: rgba(var(--interactive-active), 0.2) !important;}
 [class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {margin-bottom: 24px;}
 [class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {position: absolute; bottom: 0px; left: 0px; border-radius: 0px 0px 8px 8px;}
-[class^=botTagCompact], [class^=repliedTextPreview], [class^=repliedTextContentTrailingIcon] {order: 0 !important; /* default order is 0; 1 put it after */}
+[class^=botTagCompact], [class^=repliedTextPreview], [class^=repliedTextContentTrailingIcon] {order: 1 !important; /* default order is 0; 1 put it after */}
 
 /* "(edited)" text timestamps */
 span[class*="timestamp_"] time::before {content: '✎ ' attr(aria-label);font-size: 0.625rem;font-weight: 400;}
