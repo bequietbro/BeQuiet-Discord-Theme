@@ -289,7 +289,3 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 	--text-normal: #2e3338;
 	--interactive-normal: #4f5660;
 }
-			/*-- 3.1 Margins --*/
-.layers_d4b6c5  {
-	margin: var(--spacing-app) !important; 
-}
