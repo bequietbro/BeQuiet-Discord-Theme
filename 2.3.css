@@ -186,21 +186,16 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 [class^=footer_]:has([class*=fixedDiscoveryIcon_]) {display: none;}
 
 /* Messages */
-.contents_f9f2ca .messageContent_f9f2ca, .container_b558d0 {
-	background-color: var(--background-secondary);
-	display: inline-block;
-	width: auto;
-	max-width: 100%;
-	margin: 0;
-	padding: 3px;
-	border-radius: 4px;}
+
 .messageContent_f9f2ca:empty {display: none !important;}
 .buttons_d5deea {transform: scale(0.75); transform-origin: right;}
 .mention_edf32f {background-color: var(--interactive-active);}
 .mentioned_d5deea {background-color: rgba(var(--interactive-active), 0.1) !important;}
 .mentioned_d5deea:before {background-color: var(--interactive-active);}
 .mentioned_d5deea:hover {background-color: rgba(var(--interactive-active), 0.2) !important;}
-
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioMetadata"] {margin-bottom: 24px;}
+[class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {position: absolute; bottom: 0px; left: 0px; border-radius: 0px 0px 8px 8px;}
+[class^=botTagCompact], [class^=repliedTextPreview], [class^=repliedTextContentTrailingIcon] {order: 0 !important; /* default order is 0; 1 put it after */}
 
 
 
