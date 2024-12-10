@@ -312,3 +312,108 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 .channel_c91bad:hover .closeButton_c91bad {opacity: 0.6;margin-right: 0;}
 		/*-- 11.3 Server Sidebar --*/
 #app-mount .container_ee69e0{background: transparent;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*-- 12.4 Chat --*/	
+.chat_a7d72e, .wrapper-22ayhK {background: transparent;border-radius: var(--dplus-radius-ui)	;}
+.chatContent_a7d72e, .form_a7d72e:before, .replying_d5deea:before {
+	background: transparent !important;
+}
+.wrapper_b75bb9, #app-mount .children_fc4f04:after {display: none;}
+.group-spacing-0 { --group-spacing: 0px; }
+.group-spacing-4 { --group-spacing: 4px; }
+.group-spacing-8 { --group-spacing: 8px; }
+.group-spacing-16 { --group-spacing: 16px; }
+.group-spacing-24 { --group-spacing: var(--dplus-spacing-ui); }
+:is(.messageListItem_d5deea, .quotedChatMessage_d5deea) .message_d5deea {background: var(--dplus-bgc-chatmsg);}
+	
+.messageListItem_d5deea .groupStart_d5deea, .backgroundFlash_d5deea.groupStart_d5deea, .quotedChatMessage_d5deea .groupStart_d5deea {
+	border-radius: var(--dplus-radius-ui) var(--dplus-radius-ui) 0 0;
+	margin-top: 0;}
+:not(.divider_d5deea) + .messageListItem_d5deea:has(.groupStart_d5deea), .messageListItem_d5deea + .backgroundFlash_d5deea:has(.avatar_f9f2ca) {
+	margin-top: var(--group-spacing);}
+.wrapper_f9f2ca:hover, .wrapper_f9f2ca.selected_d5deea {
+	background: var(--dplus-bgc-chatmsg-hover) !important;}
+.scrollerSpacer_e2e187 { height: 0; }
+.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca[aria-labelledby*="upload"] {background-color: var(--dplus-bgc-chatmsg);}
+.cozy_f9f2ca .repliedMessage_f9f2ca {max-width: 100%;}
+			/* Beginning of chat */
+.container_c2668b {
+	background: var(--dplus-bgc-chatmsg);
+	border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui);
+	margin: 0;
+	padding: var(--dplus-spacing-ui);}
+.container_fc4f04.themed_fc4f04 {background: var(--dplus-bgc-ui-base);}
+.container_b385c8 { /* Forum specific; reactions, following, copy link */margin-top: 0px;border-top: none;}
+.empty_e2e187, .emptyForum_e2e187 { /* Spacing at the bottom */display: none;}
+		/* New/Old/Load messages bar */
+.newMessagesBar_cf58b5 {
+	background-color: var(--dplus-accent-ui) !important;
+	border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui) !important;
+	width: 100%;}
+.newMessagesBar_cf58b5 button:last-child {font-size: 12px;text-transform: lowercase;}
+.barBase_cf58b5 {padding: 0;left: 0; right: 0;}
+#app-mount .jumpToPresentBar-9P20AM {
+	background-color: var(--dplus-accent-ui);
+	border-radius: var(--dplus-radius-ui) var(--dplus-radius-ui) 0 0;
+	bottom: 0;
+	padding: 0;
+	cursor: pointer;
+	z-index: 2;}
+.hasMore-3e72_v {
+	background: var(--dplus-bg-1);
+	color: var(--dplus-accent-ui);
+	border: 2px solid var(--dplus-accent-ui);
+	margin: 0}
+			/*- 12.4.1 Message Seperation -*/	
+:is(.messageListItem_d5deea, .quotedChatMessage_d5deea, .backgroundFlash_d5deea):has(+ .messageListItem_d5deea .groupStart_d5deea,  + .backgroundFlash_d5deea .groupStart_d5deea, + .scrollerSpacer_e2e187, + .divider_d5deea) .groupStart_d5deea:has(.avatar_f9f2ca) 	{
+	min-height: calc(var(--dplus-spacing-ui)*2 + var(--dplus-icon-avatar-chat));
+	padding-top: 0; padding-bottom: 0;}
+.cozy_f9f2ca.wrapper_f9f2ca {padding-left: calc(var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui) * 2);}
+.groupStart_d5deea,
+.divider_d5deea + :is(.messageListItem_d5deea, .backgroundFlash_d5deea) .message_d5deea {border-radius: var(--dplus-radius-ui) var(--dplus-radius-ui) 0 0;}
+:is(.messageListItem_d5deea,.backgroundFlash_d5deea):has(+ .messageListItem_d5deea .groupStart_d5deea, + .divider_d5deea, + .scrollerSpacer_e2e187, + .backgroundFlash_d5deea .groupStart_d5deea) .message_d5deea {
+	border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui);}
+:is(.messageListItem_d5deea,.backgroundFlash_d5deea):has( + .messageListItem_d5deea .groupStart_d5deea, + .divider_d5deea, + .scrollerSpacer_e2e187, + .backgroundFlash_d5deea .groupStart_d5deea) .groupStart_d5deea,
+.divider_d5deea + :is(.messageListItem_d5deea, .backgroundFlash_d5deea):has(+ .messageListItem_d5deea .groupStart_d5deea) .message_d5deea {border-radius: var(--dplus-radius-ui);}
+		/* Forum */
+.container-3wLKDe, .container_d1c246:not(.floating_d1c246){background-color: transparent;}
+.floating_d1c246 {filter: none;}
+#app-mount .container-2qVG6q.isOpen-2OXbFs, #app-mount .container-2qVG6q:active {background: var(--dplus-bgc-chatmsg-hover);}
+		/* group-spacing 0 */
+.group-spacing-0 .message_d5deea {border-radius: 0!important;}
+.group-spacing-0 .messageListItem_d5deea:has(+ .scrollerSpacer_e2e187) .message_d5deea {border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui)!important}
+			/*- 12.4.2 Pings / Jump to Message -*/
+.mentioned_d5deea:before {display: none;}
+.wrapper_d4fa29 {background-color: var(--brand-730);}
+.mentioned_d5deea :not(.repliedTextPreview_f9f2ca) > .messageContent_f9f2ca, .mentioned_d5deea .container_b558d0 {
+	padding-left: 0;
+	margin-left: 0;
+	background-color: hsl(var(--yellow-300-hsl)/0.2);
+	border-radius: var(--dplus-radius-ui);}
+.backgroundFlash_d5deea .message_d5deea {background-color: var(--dplus-bgc-chatmsg);animation: fader 7s ;}
+@keyframes fader {
+	0% {background-color: hsla(var(--dplus-accent-color-hue), var(--dplus-accent-color-saturation), var(--dplus-accent-color-lightness), 80%);}
+	50% {background-color: var(--dplus-bgc-chatmsg-hover);}
+	100% {background-color: var(--dplus-bgc-chatmsg);}}
