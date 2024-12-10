@@ -81,7 +81,21 @@ html.theme-dark .force-theme.theme-light {
 	--input-background: #401b20;
 	--accent-color-hue: 320;
 	--accent-color-saturation: 60%;
-	--accent-color-lightness: 31%;}
+	--accent-color-lightness: 31%;
+
+
+
+	--dplus-accent-color-hue: 320;
+	--dplus-accent-color-saturation: 60%;
+	--dplus-accent-color-lightness: 31%;
+	--dplus-foreground-color-hue-base: 210; /* based on vanilla --text-normal hue */
+	--dplus-foreground-color-hue-links: 197;
+	--dplus-foreground-color-saturation-amount: 1;
+	--dplus-foreground-color-lightness-amount: 1;
+	--dplus-background-color-hue: 320;
+	--dplus-background-color-saturation-amount: 1;
+	--dplus-background-color-lightness-amount: 1;
+	--dplus-background-color-alpha: 0.8;}
 
 .theme-light,
 html.theme-light #app-mount .theme-light .root-g14mjS,
@@ -102,15 +116,82 @@ html.theme-light .force-theme.theme-light {
 	--background-modifier-active: #171717;
 	--accent-color-hue: 320;
 	--accent-color-saturation: 60%;
-	--accent-color-lightness: 31%;}
+	--accent-color-lightness: 31%;
 
 
+
+	--dplus-accent-color-hue: 320;
+	--dplus-accent-color-saturation: 60%;
+	--dplus-accent-color-lightness: 31%;
+	--dplus-foreground-color-hue-base: 210;
+	--dplus-foreground-color-hue-links: 197;
+	--dplus-foreground-color-saturation-amount: 1;
+	--dplus-foreground-color-lightness-amount: 1;
+	--dplus-background-color-hue: 320;
+	--dplus-background-color-saturation-amount: 1;
+	--dplus-background-color-lightness-amount: 1;
+	--dplus-background-color-alpha: 0.8;}
 :root.reduce-motion {
 	--anim-short: 0s;
 	--anim-long: 0s;
 	--anim-sticky: 0s;
 	--anim-button: 0s;
 	--anim-button-appear: 0s;}
+
+
+
+
+
+	.theme-dark, .theme-light {
+		--dplus-accent-ui: hsl(
+		var(--dplus-accent-color-hue),
+		var(--dplus-accent-color-saturation-factor),
+		calc(var(--dplus-accent-color-lightness) * 1)
+		);
+		--dplus-accent-ui-hover: hsl(
+		var(--dplus-accent-color-hue),
+		calc(var(--dplus-accent-color-saturation-factor) * 1.1),
+		calc(var(--dplus-accent-color-lightness) / 1.5)
+		);
+		
+		--dplus-accent-color-saturation-factor: calc(var(--dplus-accent-color-saturation) * var(--saturation-factor, 1));
+		--dplus-foreground-color-saturation-factor: calc(var(--dplus-foreground-color-saturation-amount, 1) * var(--saturation-factor, 1));
+		--dplus-background-color-saturation-factor: calc(var(--dplus-background-color-saturation-amount, 1) * var(--saturation-factor, 1));
+		
+		--dplus-bgc-ui-base: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 50%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-025)), calc(var(--dplus-background-color-alpha) * var(--dplus-bg-ui-base-alpha-modifier, 100%)));
+		--dplus-bgc-ui-base-hover: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 60%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-050)), calc(var(--dplus-background-color-alpha) * (var(--dplus-bg-ui-base-alpha-modifier, 100%) + var(--dplus-bg-hover-alpha-modifier, 10%))));
+		
+		--dplus-bgc-ui-card: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * (60% * 1/2)), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-125)), calc(var(--dplus-background-color-alpha) * var(--dplus-bg-ui-card-alpha-modifier, 100%)));
+		--dplus-bgc-ui-card-hover: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * (75% * 1/2)), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-150)), calc(var(--dplus-background-color-alpha) * (var(--dplus-bg-ui-card-alpha-modifier, 100%) + var(--dplus-bg-hover-alpha-modifier, 10%))));
+		
+		--dplus-bgc-chatmsg: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 50%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-100)), calc(var(--dplus-background-color-alpha) * var(--dplus-bg-chat-alpha-modifier, 110%)));
+		--dplus-bgc-chatmsg-hover: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 60%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-075)), calc(var(--dplus-background-color-alpha) * (var(--dplus-bg-chat-alpha-modifier, 110%) + var(--dplus-bg-hover-alpha-modifier, 10%))));
+		
+		
+		
+		--dplus-bgc-popout: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 50%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-025)), calc(var(--dplus-background-color-alpha) * var(--dplus-bg-popout-alpha-modifier, 100%)));
+		--dplus-bgc-button: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 40%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-500)), calc(var(--dplus-background-color-alpha) * 115%));
+		--dplus-bgc-button-hover: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 40%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-250)), calc(var(--dplus-background-color-alpha) * 115% + var(--dplus-bg-hover-alpha-modifier, 10%)));
+		--dplus-bgc-server-button: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 50%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-150)), calc(var(--dplus-background-color-alpha) / 3 * 2));
+		--dplus-bgc-server-button-hover: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 50%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-200)), calc(var(--dplus-background-color-alpha) / 5 * 4));
+		
+		--dplus-bgc-radiobar-hover: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 50%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-150)), calc(var(--dplus-background-color-alpha) * 100% + var(--dplus-bg-hover-alpha-modifier, 10%)));
+		--dplus-bgc-radiobar-selected: hsla(var(--dplus-background-color-hue), calc(var(--dplus-background-color-saturation-factor) * 50%), calc(var(--dplus-background-color-lightness-amount) * var(--dplus-background-color-lightness-200)), calc(var(--dplus-background-color-alpha) * 80%));	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Context menus */
 section[class^="panels_"]>div[class^="mask_"] {display: none;}
