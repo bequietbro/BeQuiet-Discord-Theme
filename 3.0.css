@@ -214,24 +214,6 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 .errorPage_dd2aa2 {width: calc(100% - var(10px) * 2)}
 .wrapper_a2a7b5 {min-height: calc(100vh - var(10px) * 2)}
 .theme-dark .wrapper_a2a7b5,
-.theme-light .wrapper_a2a7b5 {background: var(--bgc-ui-base);
-	margin: var(10px) calc(var(10px) * 2) var(10px) var(10px);
-	border-radius: var(10px);}
 .theme-dark .image_a2a7b5,
-.theme-light .image_a2a7b5 {background-image: url('https://cdn.discordapp.com/attachments/560369937084973067/853659649340473414/28.webp')}
-.image_a2a7b5 {
-	width: 256px;
-	height: 256px;
-	margin-bottom: 40px;
-	background-size: 256px 256px;}
+.image_a2a7b5 {width: 256px;height: 256px;margin-bottom: 40px;background-size: 256px 256px;}
 .title_a2a7b5, .note_a2a7b5 div p {font-size: 0px;}
-.title_a2a7b5:after {font-size: 24px;content: var(--error-discordcrash-title,"Congratulations!");}
-.note_a2a7b5 div p:first-child:after {font-size: 16px;content: var(--error-discordcrash-body,"You just unlocked Discord Minus!");color: white;}
-.note_a2a7b5 div p:nth-child(2):after {font-size: 16px;content: var(--error-discordcrash-note,"i11n");}
-/* Server Create/Join Modal */  
-.theme-dark .theme-light .container-x8Y1ix {background: var(--bgc-ui-card);}
-.filledIcon-2TG9HI { border-radius: var(10px); }
-.container-x8Y1ix:hover {background: var(--bgc-ui-card-hover) !important;}
-.header-1c1AhF {overflow: hidden;}
-.optionContainer_e3f8c2 {background-color: var(--bgc-ui-card);}
-.optionContainer_e3f8c2:hover {background-color: var(--bgc-ui-card-hover);}
