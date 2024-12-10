@@ -212,3 +212,103 @@ span[class*="timestampVisibleOnHover_"] time::before {
   top: -2px;}
 span[class*="timestampInline_"], span[class*="timestampVisibleOnHover_"] {font-size: 0rem !important;}
 span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
+
+
+
+		/*--- 5 Errors ---*/
+		
+    /*-- 5.1 Loading page (disconnection) --*/
+.container_e40c16 {background-color: hsla(0, 0%, 0%, 0.68)}
+.quote-3aooyW {font-size: 20px !important;margin-bottom: 0px !important;}
+.status-1JTY3j, .problemsText_e40c16 {color: white;text-transform: none;font-size: 16px !important;}
+.attribution-aTC3hS, .links_e40c16 {font-size: 0px !important;}
+.twitterLink_dae605:before,
+.statusLink__7b889:before {background-size: 24px 24px;height: 24px;width: 24px;}
+				
+				/*-- 5.2 Crash page --*/
+.errorPage_dd2aa2 {width: calc(100% - var(--dplus-spacing-app) * 2)}
+.wrapper_a2a7b5 {min-height: calc(100vh - var(--dplus-spacing-app) * 2)}
+.theme-dark .wrapper_a2a7b5,
+.theme-light .wrapper_a2a7b5 {background: var(--dplus-bgc-ui-base);
+	margin: var(--dplus-spacing-app) calc(var(--dplus-spacing-app) * 2) var(--dplus-spacing-app) var(--dplus-spacing-app);
+	border-radius: var(--dplus-radius-ui);}
+.theme-dark .image_a2a7b5,
+.theme-light .image_a2a7b5 {background-image: url('https://cdn.discordapp.com/attachments/560369937084973067/853659649340473414/28.webp')}
+.image_a2a7b5 {
+	width: 256px;
+	height: 256px;
+	margin-bottom: 40px;
+	background-size: 256px 256px;}
+.title_a2a7b5, .note_a2a7b5 div p {font-size: 0px;}
+.title_a2a7b5:after {font-size: 24px;content: var(--dplus-i11n-error-discordcrash-title,"Congratulations!");}
+.note_a2a7b5 div p:first-child:after {font-size: 16px;content: var(--dplus-i11n-error-discordcrash-body,"You just unlocked Discord Minus!");color: white;}
+.note_a2a7b5 div p:nth-child(2):after {font-size: 16px;content: var(--dplus-i11n-error-discordcrash-note,"dplus-i11n");}
+		
+	/*-- 7.2 Server Create/Join Modal --*/  
+.theme-dark .theme-light .root_f9a4c9 {background: var(--dplus-bgc-popout) !important;}
+.theme-dark .theme-light .container-x8Y1ix {background: var(--dplus-bgc-ui-card);}
+.filledIcon-2TG9HI { border-radius: var(--dplus-radius-ui); }
+.container-x8Y1ix:hover {background: var(--dplus-bgc-ui-card-hover) !important;}
+.header-1c1AhF {overflow: hidden;}
+.optionContainer_e3f8c2 {background-color: var(--dplus-bgc-ui-card);}
+.optionContainer_e3f8c2:hover {background-color: var(--dplus-bgc-ui-card-hover);}
+
+		/*--- 9 Titlebar ---*/
+		
+		/*-- 9.1 General Titlebar --*/
+.typeWindows_a934d8 {
+	background-color: var(--dplus-bgc-ui-base);
+	border-radius: var(--dplus-radius-ui);
+	height: 20px;
+	padding-bottom: 4px;
+	margin-right: calc(var(--dplus-spacing-app) * 2);
+	position: relative;
+	left: var(--dplus-spacing-app);
+	align-items: center;}
+.withFrame_a934d8 {margin-top: var(--dplus-spacing-app);}
+.wordmark_a934d8 svg {display: none;}
+.winButton_a934d8 {height: 24px;top: 2px;}
+.winButtonClose_a934d8 {border-radius: 0 10px 10px 0;}
+.wordmark_a934d8 {
+	display: block;
+	background: var(--dplus-wordmark);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0 !important;
+	position: fixed;
+	width: calc(100% - ( var(--dplus-spacing-app) * 2 ) - ( 28px * 3 ) - var(--dplus-spacing-ui));
+	height: 16px;
+	top: var(--dplus-spacing-app);
+	left: calc(var(--dplus-spacing-app) + var(--dplus-spacing-ui));}
+.theme-light .wordmark_a934d8 {filter: brightness(0);}
+.theme-light .theme-dark .wordmark_a934d8 {filter: none;}
+		/* titlebar corners get glitched with Nitro theme without this */
+.custom-theme-background .withBackgroundOverride_a934d8.typeWindows_a934d8 {width: 100vw;margin-left: calc(var(--dplus-radius-ui) * -1);border-radius: 0px;}
+		/* settings bg, offset to go behind titlebar */
+.platform-win .bg_d4b6c5 { top: calc(var(--dplus-spacing-app)* -1 - 23px);}
+	
+/*-- 9.2 MacOS Buttons --*/	
+.typeMacOS_a934d8 {background: var(--dplus-bgc-ui-base);border-radius: 0 0 var(--dplus-radius-ui) 0;}
+.platform-osx .guilds_a4d4d9 {padding-top: 8px;margin-top:calc(20px + var(--dplus-spacing-app));}
+
+
+		/*--- 11 Channels Sidebar ---*/
+		
+	/*-- 11.1 General Sidebar --*/
+.sidebar_a4d4d9,
+.bannerImage_fd6364 {width: var(--dplus-channels-width);}
+.sidebar_a4d4d9 {
+	background: var(--dplus-bgc-ui-base);
+	border-radius: var(--dplus-radius-ui) !important;
+	margin-right: var(--dplus-spacing-app);}
+		/*-- 11.2 DMs Sidebar --*/
+.scroller_c47fa9, .privateChannels_f0963d {background-color: transparent!important;}
+.privateChannels_f0963d .channel_c91bad {margin-left: var(--dplus-spacing-ui);margin-right: var(--dplus-spacing-ui);}
+.closeButton_c91bad {
+	display: block;
+	opacity: 0;
+	margin-right: calc(var(--dplus-spacing-ui) - var(--dplus-spacing-ui) * 1.5);
+	transition: var(--dplus-anim-button-appear);}
+.channel_c91bad:hover .closeButton_c91bad {opacity: 0.6;margin-right: 0;}
+		/*-- 11.3 Server Sidebar --*/
+#app-mount .container_ee69e0{background: transparent;}
