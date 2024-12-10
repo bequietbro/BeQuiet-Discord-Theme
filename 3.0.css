@@ -69,7 +69,16 @@ html.theme-dark .force-theme.theme-light {
 	--syntax-grey: #959da5;
 	--syntax-grey-alt: #d1d5da;
 	--activity-card-background: #301315;
-	--input-background: #401b20;}
+	--input-background: #401b20;
+	--background-color-lightness-025: 2.5%;
+	--background-color-lightness-050: 5.0%;
+	--background-color-lightness-075: 7.5%;
+	--background-color-lightness-100: 10.0%;
+	--background-color-lightness-125: 12.5%;
+	--background-color-lightness-150: 15.0%;
+	--background-color-lightness-200: 20.0%;
+	--background-color-lightness-250: 25.0%;
+	--background-color-lightness-500: 50.0%;}
 
 .theme-light,
 html.theme-light #app-mount .theme-light .root-g14mjS,
@@ -87,7 +96,22 @@ html.theme-light .force-theme.theme-light {
 	--channeltextarea-background: #ebe1e1;
 	--background-message-hover: transparent;
 	--background-modifier-hover: #111111;
-	--background-modifier-active: #171717;}
+	--background-modifier-active: #171717;
+	--background-color-lightness-025: 97.5%;
+	--background-color-lightness-050: 95.0%;
+	--background-color-lightness-075: 92.5%;
+	--background-color-lightness-100: 90.0%;
+	--background-color-lightness-125: 87.5%;
+	--background-color-lightness-150: 85.0%;
+	--background-color-lightness-200: 80.0%;
+	--background-color-lightness-250: 75.0%;
+	--background-color-lightness-500: 50.0%;}
+
+.theme-dark, .theme-light {
+	--accent-color-saturation-factor: calc(var(1) * var(--saturation-factor, 1));
+	--bgc-ui-base: hsla(var(320), calc(var(--background-color-saturation-factor) * 50%), calc(var(--background-color-lightness-amount) * var(--background-color-lightness-025)), calc(var(0.8) * var(--bg-ui-base-alpha-modifier, 100%)));
+	--bgc-ui-base-hover: hsla(var(320), calc(var(--background-color-saturation-factor) * 60%), calc(var(--background-color-lightness-amount) * var(--background-color-lightness-050)), calc(var(0.8) * (var(--bg-ui-base-alpha-modifier, 100%) + var(--bg-hover-alpha-modifier, 10%))));
+}
 
 
 /* Context menus */
@@ -197,12 +221,12 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 .twitterLink_dae605:before,
 .statusLink__7b889:before {background-size: 24px 24px;height: 24px;width: 24px;}
 /* Crash page */
-.errorPage_dd2aa2 {width: calc(100% - var(--dplus-spacing-app) * 2)}
-.wrapper_a2a7b5 {min-height: calc(100vh - var(--dplus-spacing-app) * 2)}
+.errorPage_dd2aa2 {width: calc(100% - var(10px) * 2)}
+.wrapper_a2a7b5 {min-height: calc(100vh - var(10px) * 2)}
 .theme-dark .wrapper_a2a7b5,
-.theme-light .wrapper_a2a7b5 {background: var(--dplus-bgc-ui-base);
-	margin: var(--dplus-spacing-app) calc(var(--dplus-spacing-app) * 2) var(--dplus-spacing-app) var(--dplus-spacing-app);
-	border-radius: var(--dplus-radius-ui);}
+.theme-light .wrapper_a2a7b5 {background: var(--bgc-ui-base);
+	margin: var(10px) calc(var(10px) * 2) var(10px) var(10px);
+	border-radius: var(10px);}
 .theme-dark .image_a2a7b5,
 .theme-light .image_a2a7b5 {background-image: url('https://cdn.discordapp.com/attachments/560369937084973067/853659649340473414/28.webp')}
 .image_a2a7b5 {
@@ -211,14 +235,13 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 	margin-bottom: 40px;
 	background-size: 256px 256px;}
 .title_a2a7b5, .note_a2a7b5 div p {font-size: 0px;}
-.title_a2a7b5:after {font-size: 24px;content: var(--dplus-i11n-error-discordcrash-title,"Congratulations!");}
-.note_a2a7b5 div p:first-child:after {font-size: 16px;content: var(--dplus-i11n-error-discordcrash-body,"You just unlocked Discord Minus!");color: white;}
-.note_a2a7b5 div p:nth-child(2):after {font-size: 16px;content: var(--dplus-i11n-error-discordcrash-note,"dplus-i11n");}
+.title_a2a7b5:after {font-size: 24px;content: var(--error-discordcrash-title,"Congratulations!");}
+.note_a2a7b5 div p:first-child:after {font-size: 16px;content: var(--error-discordcrash-body,"You just unlocked Discord Minus!");color: white;}
+.note_a2a7b5 div p:nth-child(2):after {font-size: 16px;content: var(--error-discordcrash-note,"i11n");}
 /* Server Create/Join Modal */  
-.theme-dark .theme-light .root_f9a4c9 {background: var(--dplus-bgc-popout) !important;}
-.theme-dark .theme-light .container-x8Y1ix {background: var(--dplus-bgc-ui-card);}
-.filledIcon-2TG9HI { border-radius: var(--dplus-radius-ui); }
-.container-x8Y1ix:hover {background: var(--dplus-bgc-ui-card-hover) !important;}
+.theme-dark .theme-light .container-x8Y1ix {background: var(--bgc-ui-card);}
+.filledIcon-2TG9HI { border-radius: var(10px); }
+.container-x8Y1ix:hover {background: var(--bgc-ui-card-hover) !important;}
 .header-1c1AhF {overflow: hidden;}
-.optionContainer_e3f8c2 {background-color: var(--dplus-bgc-ui-card);}
-.optionContainer_e3f8c2:hover {background-color: var(--dplus-bgc-ui-card-hover);}
+.optionContainer_e3f8c2 {background-color: var(--bgc-ui-card);}
+.optionContainer_e3f8c2:hover {background-color: var(--bgc-ui-card-hover);}
