@@ -17,14 +17,6 @@
              \|___|/                                        \|__|          
 */
 :root {
-	--blur-ui: 2px;
-  --blur-scale: 100;
-	--blur-popout: 3px;
-  --channels-width: 240px;
-	--members-width: 240px;
-	--scrollbar-width: 10px;
-	--blurcalc-popout: blur(calc(var(--blur-popout) / 100 * var(--blur-scale)));
-	--blurcalc-ui: blur(calc(var(--blur-ui) / 100 * var(--blur-scale)));
 	--header-height: 40px;
 	--border-radius: 3px;
 	--noasw-padding: calc(var(--toolbar-height) + (var(--server-icon-size) - var(--server-icon-size)));
@@ -77,10 +69,7 @@ html.theme-dark .force-theme.theme-light {
 	--syntax-grey: #959da5;
 	--syntax-grey-alt: #d1d5da;
 	--activity-card-background: #301315;
-	--input-background: #401b20;
-	--accent-color-hue: 320;
-	--accent-color-saturation: 60%;
-	--accent-color-lightness: 31%;}
+	--input-background: #401b20;}
 
 .theme-light,
 html.theme-light #app-mount .theme-light .root-g14mjS,
@@ -98,16 +87,8 @@ html.theme-light .force-theme.theme-light {
 	--channeltextarea-background: #ebe1e1;
 	--background-message-hover: transparent;
 	--background-modifier-hover: #111111;
-	--background-modifier-active: #171717;
-	--accent-color-hue: 320;
-	--accent-color-saturation: 60%;
-	--accent-color-lightness: 31%;}
-:root.reduce-motion {
-	--anim-short: 0s;
-	--anim-long: 0s;
-	--anim-sticky: 0s;
-	--anim-button: 0s;
-	--anim-button-appear: 0s;}
+	--background-modifier-active: #171717;}
+
 
 /* Context menus */
 section[class^="panels_"]>div[class^="mask_"] {display: none;}
@@ -148,7 +129,6 @@ img[class="emoji otherEmoji_e58351"]:hover {transform: scale(2);}
 div.side_a0 > div.item_a0[data-tab-id="Discord Nitro"] {display: none !important;}
 div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !important;}
 .textBadge__45d79{display: none;}
-
 
 /* Avatar */
 :root .avatar_f9f2ca.clickable_f9f2ca {filter: drop-shadow(0 0 5px); color: var(--interactive-active);}
@@ -192,8 +172,6 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 [class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {position: absolute; bottom: 0px; left: 0px; border-radius: 0px 0px 8px 8px;}
 [class^=botTagCompact], [class^=repliedTextPreview], [class^=repliedTextContentTrailingIcon] {order: 0 !important; /* default order is 0; 1 put it after */}
 
-
-
 /* "(edited)" text timestamps */
 span[class*="timestamp_"] time::before {content: '✎ ' attr(aria-label);font-size: 0.625rem;font-weight: 400;}
 span[class*="timestampInline_"] time::before {content: attr(aria-label);font-size: 0.75rem;font-weight: 500;}
@@ -210,17 +188,15 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 
 
 
-		/*--- 5 Errors ---*/
-		
-    /*-- 5.1 Loading page (disconnection) --*/
+/* Errors */
+/* Loading page (disconnection) */
 .container_e40c16 {background-color: hsla(0, 0%, 0%, 0.68)}
 .quote-3aooyW {font-size: 20px !important;margin-bottom: 0px !important;}
 .status-1JTY3j, .problemsText_e40c16 {color: white;text-transform: none;font-size: 16px !important;}
 .attribution-aTC3hS, .links_e40c16 {font-size: 0px !important;}
 .twitterLink_dae605:before,
 .statusLink__7b889:before {background-size: 24px 24px;height: 24px;width: 24px;}
-				
-				/*-- 5.2 Crash page --*/
+/* Crash page */
 .errorPage_dd2aa2 {width: calc(100% - var(--dplus-spacing-app) * 2)}
 .wrapper_a2a7b5 {min-height: calc(100vh - var(--dplus-spacing-app) * 2)}
 .theme-dark .wrapper_a2a7b5,
@@ -238,8 +214,7 @@ span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
 .title_a2a7b5:after {font-size: 24px;content: var(--dplus-i11n-error-discordcrash-title,"Congratulations!");}
 .note_a2a7b5 div p:first-child:after {font-size: 16px;content: var(--dplus-i11n-error-discordcrash-body,"You just unlocked Discord Minus!");color: white;}
 .note_a2a7b5 div p:nth-child(2):after {font-size: 16px;content: var(--dplus-i11n-error-discordcrash-note,"dplus-i11n");}
-		
-	/*-- 7.2 Server Create/Join Modal --*/  
+/* Server Create/Join Modal */  
 .theme-dark .theme-light .root_f9a4c9 {background: var(--dplus-bgc-popout) !important;}
 .theme-dark .theme-light .container-x8Y1ix {background: var(--dplus-bgc-ui-card);}
 .filledIcon-2TG9HI { border-radius: var(--dplus-radius-ui); }
