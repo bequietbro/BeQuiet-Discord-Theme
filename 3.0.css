@@ -123,7 +123,7 @@ section[class^="panels_"]>div[class^="mask_"] {display: none;}
   &>[class*=searchBar_] {width: 22px; background: transparent;}
   & svg[class*=icon_] {transform: scale(1.4); color: var(--interactive-normal);}}
 [class^="container_"]:not([class*="bannerVisible_"]) >
-[class^="animatedContainer_"] {top: 2px;}
+[class^="animatedContainer_"] {top: 3px;}
 [class*="animatedContainer_"] {opacity: 1 !important;}
 [class*="headerContent_"] {filter: drop-shadow(0 1px 1px var(--background-primary));}
 [class^="sidebar_"] header {background-color: transparent !important;}
