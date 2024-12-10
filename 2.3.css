@@ -119,9 +119,7 @@ section[class^="panels_"]>div[class^="mask_"] {display: none;}
 .wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb svg {display: none;}
 [class*=toolbar_]>*>[class*=search_]:not([class*=open_]) {
   &>[class*=searchBar_] {width: 22px; background: transparent;}
-
-  & svg[class*=icon_] {transform: scale(1.4); color: var(--interactive-normal);}
-}
+  & svg[class*=icon_] {transform: scale(1.4); color: var(--interactive-normal);}}
 [class^="container_"]:not([class*="bannerVisible_"]) >
 [class^="animatedContainer_"] {top: 3px;}
 [class*="animatedContainer_"] {opacity: 1 !important;}
@@ -134,31 +132,9 @@ section[class^="panels_"]>div[class^="mask_"] {display: none;}
 .description_e0f739 {display: none;}
 [class^=guildSidebar_] [class^=bottomRow_]:has([class*=bottomRowActionDisabled_]) [class*=bottomRowActionDisabled_] {display: none;}
 
-@media (max-width: 1100px)
-{
-    [class*="sidebar_"]
-    {
-        width: 200px;
-        .vc-typing-indicator, .vc-channelemojis-emoji, [class*="guildIconV2Container_"]
-        {
-            display: none;
-        }
-        [class*="containerDefault_"]
-        {
-            [role="img"]
-            {
-                display: none;
-            }
-        }
-    }
-    [class*="chat_"]
-    {
-        [class*="membersWrap_"]
-        {
-            display: none;
-        }
-    }
-}
+@media (max-width: 1100px){
+    [class*="sidebar_"]{width: 200px;.vc-typing-indicator, .vc-channelemojis-emoji, [class*="guildIconV2Container_"]{display: none;}[class*="containerDefault_"]{[role="img"]{display: none;}}}
+    [class*="chat_"]{[class*="membersWrap_"]{display: none;}}}
 img[class="emoji otherEmoji_e58351"]:hover {transform: scale(2);}
 
 /* Settings */
@@ -217,8 +193,7 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 	max-width: 100%;
 	margin: 0;
 	padding: 3px;
-	border-radius: 4px;
-}
+	border-radius: 4px;}
 .messageContent_f9f2ca:empty {display: none !important;}
 .buttons_d5deea {transform: scale(0.75); transform-origin: right;}
 .mention_edf32f {background-color: var(--interactive-active);}
@@ -235,8 +210,7 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
     position: absolute !important;
     height: 0px !important;
     width: 0px !important;
-    z-index: 0 !important;
-}
+    z-index: 0 !important;}
 :root .buttons_ce5b56 {
     margin: 6px 6px 6px auto !important;
     margin-left: auto;
@@ -248,26 +222,12 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
     flex-wrap: wrap-reverse;
     flex-grow: 1;
     height: fit-content;
-    justify-content: right;
-}
-.buttons_ce5b56 .buttonContainer__8b164,
-.buttons_ce5b56 > .button_afdfd9 {width: 40px;}
-.separator__8424b {margin: 0; justify-content: center; width: 40px;}
-.separator__8424b::before {display: none;}
-.separator__8424b .innerButton_debeee {margin: 0;}
-.textArea__74543 {width: fit-content; flex-grow: 1.01;}
+    justify-content: right;}
+
 
 /* "(edited)" text timestamps */
-span[class*="timestamp_"] time::before {
-    content: '✎ ' attr(aria-label);
-    font-size: 0.625rem;
-    font-weight: 400;
-}
-span[class*="timestampInline_"] time::before {
-  content: attr(aria-label);
-  font-size: 0.75rem;
-  font-weight: 500;
-}
+span[class*="timestamp_"] time::before {content: '✎ ' attr(aria-label);font-size: 0.625rem;font-weight: 400;}
+span[class*="timestampInline_"] time::before {content: attr(aria-label);font-size: 0.75rem;font-weight: 500;}
 span[class*="timestampVisibleOnHover_"] time::before {
   content: attr(aria-label);
   position: absolute;
@@ -275,17 +235,6 @@ span[class*="timestampVisibleOnHover_"] time::before {
   line-height: 0.85rem;
   width: 65px;
   left: -1px;
-  top: -2px;
-}
+  top: -2px;}
 span[class*="timestampInline_"], span[class*="timestampVisibleOnHover_"] {font-size: 0rem !important;}
 span[class*="edited_"] {position: relative; right: 95px; color: transparent;}
-
-
-
-		/*--- 3 Background ---*/
-.theme-dark .layer-1Ixpg3 .theme-light {
-	--header-primary: #060607;
-	--header-secondary: #4f5660;
-	--text-normal: #2e3338;
-	--interactive-normal: #4f5660;
-}
