@@ -111,24 +111,7 @@ html.theme-light .force-theme.theme-light {
 	--anim-button-appear: 0s;}
 
 /* Context menus */
-section[class^="panels_"]>div[class^="mask_"] {display: none;}
-.libraryHeader_cb9493::before {top: var(--header-height);}
-.wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb {background: var(--beq-home-icon) center/cover no-repeat; min-width: 50px; min-height: 50px;}
-.wrapper_f90abb[data-list-item-id="guildsnav___home"] .childWrapper_f90abb svg {display: none;}
-[class*=toolbar_]>*>[class*=search_]:not([class*=open_]) {
-  &>[class*=searchBar_] {width: 22px; background: transparent;}
-  & svg[class*=icon_] {transform: scale(1.4); color: var(--interactive-normal);}}
-[class^="container_"]:not([class*="bannerVisible_"]) >
-[class^="animatedContainer_"] {top: 3px;}
-[class*="animatedContainer_"] {opacity: 1 !important;}
-[class*="headerContent_"] {filter: drop-shadow(0 1px 1px var(--background-primary));}
-[class^="sidebar_"] header {background-color: transparent !important;}
-[class^='membersGroup']:has([role=button]),
-[class^='member'] [class^='container']:has([class*='badges']) {display: none;}
-.item-1OdjEX {min-height: 18px;}
-.styleFixed-2_NfVL {width: calc(var(--sidebar-width) - 20px);}
-.description_e0f739 {display: none;}
-[class^=guildSidebar_] [class^=bottomRow_]:has([class*=bottomRowActionDisabled_]) [class*=bottomRowActionDisabled_] {display: none;}
+
 
 @media (max-width: 1100px){
     [class*="sidebar_"]{width: 200px;.vc-typing-indicator, .vc-channelemojis-emoji, [class*="guildIconV2Container_"]{display: none;}[class*="containerDefault_"]{[role="img"]{display: none;}}}
