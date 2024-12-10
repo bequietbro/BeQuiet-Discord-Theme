@@ -109,8 +109,8 @@ html.theme-light .force-theme.theme-light {
 
 .theme-dark, .theme-light {
 	--accent-color-saturation-factor: calc(var(1) * var(--saturation-factor, 1));
-	--bgc-ui-base: hsla(var(320), calc(var(--background-color-saturation-factor) * 50%), calc(var(--background-color-lightness-amount) * var(--background-color-lightness-025)), calc(var(0.8) * var(--bg-ui-base-alpha-modifier, 100%)));
-	--bgc-ui-base-hover: hsla(var(320), calc(var(--background-color-saturation-factor) * 60%), calc(var(--background-color-lightness-amount) * var(--background-color-lightness-050)), calc(var(0.8) * (var(--bg-ui-base-alpha-modifier, 100%) + var(--bg-hover-alpha-modifier, 10%))));
+	--bgc-ui-base: hsla(var(320), calc(var(--background-color-saturation-factor) * 50%), calc(var(--background-color-lightness-amount) * var(--background-color-lightness-025)), calc(var(0.8) * var(--dplus-bg-ui-base-alpha-modifier, 100%)));
+	--bgc-ui-base-hover: hsla(var(320), calc(var(--background-color-saturation-factor) * 60%), calc(var(--background-color-lightness-amount) * var(--background-color-lightness-050)), calc(var(0.8) * (var(--dplus-bg-ui-base-alpha-modifier, 100%) + var(--dplus-bg-hover-alpha-modifier, 10%))));
 }
 
 
