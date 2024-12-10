@@ -25,10 +25,32 @@
 @import url('https://ukriu.github.io/cssCord/Other/gradientML.css');
 
 
-:root {
-    /*ΞΞΞΞΞΞΞΞΞΞΞ╣ INTERFACE ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
-    
 
+.theme-dark {
+	--background-color-lightness-025: 2.5%;
+	--background-color-lightness-050: 5.0%;
+	--background-color-lightness-075: 7.5%;
+	--background-color-lightness-100: 10.0%;
+	--background-color-lightness-125: 12.5%;
+	--background-color-lightness-150: 15.0%;
+	--background-color-lightness-200: 20.0%;
+	--background-color-lightness-250: 25.0%;
+	--background-color-lightness-500: 50.0%;
+}
+
+.theme-light {
+	--background-color-lightness-025: 97.5%;
+	--background-color-lightness-050: 95.0%;
+	--background-color-lightness-075: 92.5%;
+	--background-color-lightness-100: 90.0%;
+	--background-color-lightness-125: 87.5%;
+	--background-color-lightness-150: 85.0%;
+	--background-color-lightness-200: 80.0%;
+	--background-color-lightness-250: 75.0%;
+	--background-color-lightness-500: 50.0%;
+}
+
+:root {
 	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
 	--beq-home-icon: url(https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/quiet-logo.png?raw=true); /* Default: https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/quiet-logo.png.png?raw=true */
 	--server-radius: 8px; /* Default: 8px */
@@ -59,11 +81,12 @@
 	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ SETTINGS ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
     --icon-size: 24px; /* Default: 24px */
     --icon-height: 32px; /* Default: 32px */
-    --icon-animations: true; /* Default: true */        /* ICONS */
+    --icon-animations: true; /* Default: true */
     --icon-expand: false; /* Default: false */
     --icon-monocolor: false; /* Default: false */
-    --icon-permacolor: false; /* Default: false */}
-[class*="AppLauncher"] {display: none; /* Hide App Launcher */}
+    --icon-permacolor: false; /* Default: false */
+}
+[class*="AppLauncher"] {display: none; /* Hides App Launcher */}
 
 /* Code block styling (requires 'ShikiCodeblocks' plugin) */
 code {
@@ -95,3 +118,4 @@ code {
     -webkit-backdrop-filter: blur(100px);
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform: translateY(-4px);}
+.layers_d4b6c5  {margin: var(--spacing-app) !important; }
