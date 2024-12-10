@@ -204,25 +204,6 @@ div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !impo
 [class^="mosaicItem"] > [class^="wrapperAudio"] > [class^="audioControls"] {position: absolute; bottom: 0px; left: 0px; border-radius: 0px 0px 8px 8px;}
 [class^=botTagCompact], [class^=repliedTextPreview], [class^=repliedTextContentTrailingIcon] {order: 1 !important; /* default order is 0; 1 put it after */}
 
-[class*=channelTextAreaDisabled] {display: none !important;}
-[class*=channelTextAreaDisabled] {
-    opacity: 0 !important;
-    position: absolute !important;
-    height: 0px !important;
-    width: 0px !important;
-    z-index: 0 !important;}
-:root .buttons_ce5b56 {
-    margin: 6px 6px 6px auto !important;
-    margin-left: auto;
-    max-width: calc(40px * 6);
-    min-width: calc(40px * 2);
-    width: min-content;
-    display: flex;
-    gap: 6px 0;
-    flex-wrap: wrap-reverse;
-    flex-grow: 1;
-    height: fit-content;
-    justify-content: right;}
 
 
 /* "(edited)" text timestamps */
