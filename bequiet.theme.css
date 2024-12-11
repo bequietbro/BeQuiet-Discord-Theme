@@ -5,7 +5,7 @@
  * @description Standart version. Firstly, it was created for the author himself.
  * @source https://github.com/bequietbro/BeQuiet-Discord-Theme
 */
-@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/refs/heads/dev/2.3.css");
+@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/refs/heads/dev/3.0.css");
 
 
 /* No scrollbars */
@@ -24,31 +24,6 @@
 @import url('https://ukriu.github.io/cssCord/Other/gradientDM.css');
 @import url('https://ukriu.github.io/cssCord/Other/gradientML.css');
 
-
-
-.theme-dark {
-	--background-color-lightness-025: 2.5%;
-	--background-color-lightness-050: 5.0%;
-	--background-color-lightness-075: 7.5%;
-	--background-color-lightness-100: 10.0%;
-	--background-color-lightness-125: 12.5%;
-	--background-color-lightness-150: 15.0%;
-	--background-color-lightness-200: 20.0%;
-	--background-color-lightness-250: 25.0%;
-	--background-color-lightness-500: 50.0%;
-}
-
-.theme-light {
-	--background-color-lightness-025: 97.5%;
-	--background-color-lightness-050: 95.0%;
-	--background-color-lightness-075: 92.5%;
-	--background-color-lightness-100: 90.0%;
-	--background-color-lightness-125: 87.5%;
-	--background-color-lightness-150: 85.0%;
-	--background-color-lightness-200: 80.0%;
-	--background-color-lightness-250: 75.0%;
-	--background-color-lightness-500: 50.0%;
-}
 
 :root {
 	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
@@ -86,7 +61,8 @@
     --icon-monocolor: false; /* Default: false */
     --icon-permacolor: false; /* Default: false */
 }
-[class*="AppLauncher"] {display: none; /* Hides App Launcher */}
+[class*="AppLauncher"] {display: none;} /* Hides App Launcher */
+@supports (selector(:has(*))) {[aria-label="Download Apps"] {display: none !important;}} /* Hides Download App (not fully) */
 
 /* Code block styling (requires 'ShikiCodeblocks' plugin) */
 code {
@@ -118,4 +94,4 @@ code {
     -webkit-backdrop-filter: blur(100px);
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform: translateY(-4px);}
-.layers_d4b6c5  {margin: var(--spacing-app) !important; }
+.layers_d4b6c5  {margin: var(--space) !important;}
