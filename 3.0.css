@@ -128,50 +128,38 @@ div.side_a0 > div.item_a0[data-tab-id="Discord Nitro"] {display: none !important
 div.side_a0 > div.item_a0[data-tab-id="Nitro Server Boost"] {display: none !important;}
 .textBadge__45d79{display: none;}
 .fieldList_b69b77 {
-	position: relative;
-display: grid;
-grid-template-columns: 1fr;
-grid-auto-rows: max-content;
-gap: 8px;
-width: 100%;
-scrollbar-width: none !important;
-box-sizing: border-box;
-overflow: hidden auto;
-background-color: transparent;
-border-radius: 0;
+        position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    gap: 8px;
+    width: 100%;
+    scrollbar-width: none !important;
+    box-sizing: border-box;
+    overflow: hidden auto;
+    background-color: transparent;
+    border-radius: 0;
 }
 .fieldTitle_b69b77 {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 .background_b69b77 {
-background-color: transparent;
-margin: 0;
+    background-color: transparent;
+    margin: 0;
 }
 .accountProfileCard_b69b77 {
-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
-background-color: var(--modal-background);
-border-radius: 4px;
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    background-color: var(--modal-background);
+    border-radius: 4px;
 }
 .visual-refresh .accountProfileCard_b69b77 {
-border-radius: var(--radius-md);
-background-color: var(--bg-base-primary);
-border: 1px solid var(--border-subtle);
-}
-.fieldButton_b69b77 {
-color: var(--white-500) !important;
-background-color: var(--button-secondary-background);
-transition: background-color var(--custom-button-transition-duration)ease,color var(--custom-button-transition-duration)ease;
-}
-.fieldButton_b69b77:hover {
-color: var(--white-500) !important;
-background-color: var(--button-secondary-background-hover);
-}
-.fieldButton_b69b77 > .contents_dd4f85 {
-background-image: none;
+    border-radius: var(--radius-md);
+    background-color: var(--bg-base-primary);
+    border: 1px solid var(--border-subtle);
 }
 :where(.visual-refresh) .fieldButton_b69b77 {
-border: 1px solid rgba(255,255,255,.1);
-transition-duration: .3s;
+    border: 1px solid rgba(255,255,255,.1);
+    transition-duration: .3s;
 }
 
 /* Avatar */
