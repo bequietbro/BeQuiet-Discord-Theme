@@ -2,14 +2,13 @@
  * @name Be Quiet
  * @version 3.0
  * @author BEQI
- * @description Standart version. Firstly, it was created for the author himself.
+ * @description It was created for the author himself.
  * @source https://github.com/bequietbro/BeQuiet-Discord-Theme
 */
-@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/refs/heads/dev/3.0.css");
-
+@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/refs/heads/dev/v3.0.css");
 
 /* No scrollbars */
-@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/noscrollbars.css");
+/*@import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/noscrollbars.css");*/
 
 /* Forum improvements */
 @import url("https://raw.githubusercontent.com/bequietbro/BeQuiet-Discord-Theme/dev/forumattachments.css");
@@ -21,77 +20,57 @@
 @import url("https://gold-me.github.io/DiscordIcons/main.css");
 
 /* Gradient Direct Messages & Member List */
-@import url('https://ukriu.github.io/cssCord/Other/gradientDM.css');
-@import url('https://ukriu.github.io/cssCord/Other/gradientML.css');
+@import url("https://ukriu.github.io/cssCord/Other/gradientDM.css");
+@import url("https://ukriu.github.io/cssCord/Other/gradientML.css");
+
+/* Hide Cosmetics */
+@import url("https://ukriu.github.io/cssCord/Other/blandProfile.css");
+
 
 
 :root {
-	/*ΞΞΞΞΞΞΞΞΞΞΞΞ╣ SERVERS ╠ΞΞΞΞΞΞΞΞΞΞΞΞ*/
-	--beq-home-icon: url(https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/quiet-logo.png?raw=true); /* Default: https://github.com/bequietbro/BeQuiet-Discord-Theme/blob/dev/quiet-logo.png.png?raw=true */
-	--server-radius: 8px; /* Default: 8px */
-	--guildbar-width: 56px; /* Default: 56px */
-	
-	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ TOOLTIPS ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
-	--disable-animations: 2s channel-unread infinite; /* Default: 2s */
-	
-	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ MESSAGES ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
-	--interactive-normal: #b78890; /* Default: #b78890 */
-    --interactive-hover: #e3263f; /* Default: #e3263f */
     --interactive-active: #fc2b47; /* Default: #fc2b47 */
-    --interactive-muted: #484951; /* Default: #484951 */
-	--max-width: calc(40px * 4); /* 4 columns when expanded */
-    --min-width: calc(40px * 2); /* 2 columns when collapsed */
-	
-	--gDM-online: linear-gradient(to right, rgb(68, 105, 68), transparent); /* Default: to right, rgb(68, 105, 68), transparent */
-    --gDM-offline: linear-gradient(to right, rgb(66, 66, 66), transparent); /* Default: to right, rgb(66, 66, 66), transparent */
-    --gDM-dnd: linear-gradient(to right, rgb(130,70,70), transparent); /* Default: to right, rgb(130,70,70), transparent*/
-    --gDM-idle: linear-gradient(to right, rgb(135, 105, 75), transparent); /* Default: to right, rgb(135, 105, 75), transparent */
-    --gDM-streaming: linear-gradient(to right, rgb(63, 33, 88), transparent); /* Default: to right, rgb(63, 33, 88), transparent */
-    --gDM-border-radius: 8px;
-
-	/*ΞΞΞΞΞΞΞΞΞ╣ CHANNEL LIST ╠ΞΞΞΞΞΞΞΞΞ*/
-    --channellist-width: 240px; /* Default: 240px */
-    --channellist-header-height: 48px; /* Default: 48px */
-	
-	/*ΞΞΞΞΞΞΞΞΞΞΞ╣ SETTINGS ╠ΞΞΞΞΞΞΞΞΞΞΞ*/
-    --icon-size: 24px; /* Default: 24px */
-    --icon-height: 32px; /* Default: 32px */
-    --icon-animations: true; /* Default: true */
-    --icon-expand: false; /* Default: false */
-    --icon-monocolor: false; /* Default: false */
-    --icon-permacolor: false; /* Default: false */
+    --disable-animations: 2s channel-unread infinite; /* Default: 2s */
+    --brand-500: #ff3246 !important;         /* Main color. Default: #ff3246 */
+    --brand-560: var(--brand-500) !important; /* For gradients. Default: var(--brand-500) */
+    --brand-600: #ff1a30 !important;         /* Active state. Default: #ff1a30 */
+    --brand-400: #ff4d5d !important;         /* Hover effects. Default: #ff4d5d */
+    --brand-460: var(--brand-400) !important; /* Hover Gradients. Default: var(--brand-400) */
+    --rscb-no-jump-chat: 0;/*Whether you want the chat to not move up and down when someone starts typing*/
 }
-[class*="AppLauncher"] {display: none;} /* Hides App Launcher */
-@supports (selector(:has(*))) {[aria-label="Download Apps"] {display: none !important;}} /* Hides Download App (not fully) */
 
-/* Code block styling (requires 'ShikiCodeblocks' plugin) */
-code {
-    position: relative;
-    z-index: 1;
-    padding: 1em;
-    background-color: #0d0409 !important;
-    overflow: hidden;
-    border-radius: 8px;}
-.footer_d8e2d0 {
-    background-size: 400% 400%;
-    backdrop-filter: blur(15px) saturate(180%);
-    -webkit-backdrop-filter: blur(15px) saturate(180%);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);}
-.shiki-container {
-    background-color: transparent !important;}
-.shiki-btn{
-    background-color: rgba(239, 0, 88, 0.493) !important;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(100px) saturate(110%);
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    padding: 5px;}
-.shiki-btn:hover{
-    background-color: rgba(239, 0, 88, 0.619) !important;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(100px) saturate(110%);
-    -webkit-backdrop-filter: blur(100px);
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    transform: translateY(-4px);}
-.layers_d4b6c5  {margin: var(--space) !important;}
+
+
+
+/* ΞΞΞΞΞΞΞΞΞΞ╣ NO ACTIVITY ╠ΞΞΞΞΞΞΞΞΞΞ */
+[class*='membersGroup']:has([role=button]), [class*='member'] [class*='container']:has([class*='badges']) {display: none;} /*in Member List*/
+.nowPlayingColumn__133bf {display: none !important; width: 0 !important; height: 0 !important;}/*in DM*/
+
+/* Hide clan (guild) tags */
+[class*="chipletContainerInner_"]:has([src*="/clan-badges/"]) {display: none;}
+
+
+
+/* ΞΞΞΞΞΞΞΞΞ╣ OPTIMIZATIONS ╠ΞΞΞΞΞΞΞΞΞ */
+/* Disable transparency effects */
+.layer__6b5c3,.root_a28985 {opacity: 1 !important;}
+
+/* Removing gradients */
+[class*="gradient"] {background-image: none !important;}*/
+
+/* Disabling expensive filters */
+[style*="backdrop-filter"], [class*="blur"] {backdrop-filter: none !important; filter: none !important;}
+
+/* Removing GIF avatars */
+/*[class*="avatar"] img[src*=".gif"] {content: url("") !important;}*/
+
+/* Forced GPU rendering */
+.app__0cde1 {transform: translateZ(0); will-change: transform;}
+
+/* Disable complex scrolling effects */
+[class*="scroller"] {scroll-behavior: auto !important;}
+
+
+
+/* ΞΞΞΞΞΞΞΞΞΞ╣ NO BUTTONS ╠ΞΞΞΞΞΞΞΞΞΞ */
+[data-list-item-id="download-apps"], .listItem__650eb:has(.pill__5bc7e) {display: none !important;}
