@@ -1,6 +1,7 @@
 ## Be Quiet - Theme for Discord
 Download ONLY **bequiet.theme.css**.
-![Demonstration](image-1.png)
+![Demonstration](https://github.com/user-attachments/assets/cb0e200e-dd88-4a86-8acf-f371e14d8adc)
+
 
 ## Features of the theme:
 1. Compact channels list, compact+scrollable codeblocks and compact member count indicators, which is added by the "MemberCount" plugin.
