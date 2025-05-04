@@ -484,3 +484,4 @@ form > div.focusLock__49fc1 > div.rootWithShadow__49fc1 {
     filter: brightness(1.1);
     opacity: 0.25;
 }
+.avatarPopover__2d0a, .statusPopover__2d0ab, .activityPopover__2d0ab{display:none;}
